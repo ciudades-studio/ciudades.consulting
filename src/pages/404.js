@@ -4,7 +4,7 @@ import Layout from 'components/layout';
 
 const NotFound = () => (
   <Layout>
-    <Box>Not found.</Box>
+    <Box>{`All roads lead to Rome. We'll eventually get there, just not yet.`}</Box>
   </Layout>
 );
 

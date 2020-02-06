@@ -1,19 +1,19 @@
 {
-  "title": "Home",
+  "title": "Ciudades",
   "content": "intro.md",
   "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
+    "title": "Web development",
+    "copy": "Become publicly available on Internet, reaching and engaging with your clients",
     "image": "../images/gallery/react-context.jpg"
   },
   {
-    "title": "Page Transitions",
-    "copy": "Component-based for easy usage.",
+    "title": "Data visualization",
+    "copy": "Improve your company operations and workflow by using valuable information",
     "image": "../images/gallery/page-transitions.jpg"
   },
   {
-    "title": "Intersection Observer",
-    "copy": "Including a polyfill for Safari.",
+    "title": "Real time reporting and automatization",
+    "copy": "Save time & money using good technology and efficient tools",
     "image": "../images/gallery/intersection-observer.jpg"
   }]
 }
