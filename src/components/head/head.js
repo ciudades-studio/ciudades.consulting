@@ -5,6 +5,15 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Location } from '@reach/router';
 import schemaGenerator from 'helpers/schemaGenerator';
 
+const googleTagManager = `
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M44KBB3');</script>
+<!-- End Google Tag Manager -->`;
+
 const Head = ({
   siteTitle,
   siteDescription,
@@ -19,21 +28,7 @@ const Head = ({
 }) => (
   <Helmet>
     <html lang="en" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-158101812-1"
-    ></script>
-    <script type="text/javascipt">
-      {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            window.dataLayer.push(arguments)
-          }
-          gtag('js', new Date());
-
-        gtag('config', 'UA-158101812-1');
-        `}
-    </script>
+    <script type="text/javascipt">{googleTagManager}</script>
     <script>
       {`
         (function(h,o,t,j,a,r){
