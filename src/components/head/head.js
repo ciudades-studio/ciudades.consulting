@@ -19,6 +19,21 @@ const Head = ({
 }) => (
   <Helmet>
     <html lang="en" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-158101812-1"
+    ></script>
+    <script type="text/javascipt">
+      {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            window.dataLayer.push(arguments)
+          }
+          gtag('js', new Date());
+
+        gtag('config', 'UA-158101812-1');
+        `}
+    </script>
 
     <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
     <meta
