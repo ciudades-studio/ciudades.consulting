@@ -4,6 +4,7 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
 import Gallery from 'components/gallery';
+import Intro from 'components/intro';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
@@ -13,6 +14,7 @@ const Index = ({ data }) => (
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
     </Box>
+    <Intro />
     <Gallery items={data.homeJson.gallery} />
   </Layout>
 );
