@@ -9,7 +9,7 @@ import { graphql } from 'gatsby';
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Title as="h1" size="large">
+      <Title as="p" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
     </Box>
