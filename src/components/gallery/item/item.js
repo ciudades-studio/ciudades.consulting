@@ -5,7 +5,7 @@ import { Title, Copy, RoundBorderImage } from './item.css';
 
 const Item = ({ title, copy, image }) => (
   <figure>
-    <RoundBorderImage fluid={image ? image.childImageSharp.fluid : {}} alt={title} pixels={8} />
+    <RoundBorderImage fluid={image ? image.childImageSharp.fluid : {}} alt={title} borderRadius={8} />
     <figcaption>
       <Title>{title}</Title>
       <Copy>{copy}</Copy>
