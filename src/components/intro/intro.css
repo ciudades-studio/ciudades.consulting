@@ -1,0 +1,48 @@
+.intro {
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0e9;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: radial-gradient(
+      #d8dad5 2px,
+      transparent 2px
+  );
+  background-size: 30px 30px ;
+}
+
+.intro__logo__container {
+  height: 30vw;
+  width: 30vw;
+  margin-right: 6%;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .intro__logo__container {
+    height: 55vw;
+    width: 55vw;
+    margin-right: 0%;
+  }
+  .intro {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0e9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(
+        #d8dad5 2px,
+        transparent 2px
+    );
+    background-size: 30px 30px ;
+  }
+}
