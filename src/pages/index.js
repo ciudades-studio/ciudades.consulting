@@ -8,15 +8,17 @@ import Intro from 'components/intro';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
-  <Layout>
-    <Box>
-      <Title as="p" size="large">
-        {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
-      </Title>
-    </Box>
+  <>
     <Intro />
-    <Gallery items={data.homeJson.gallery} />
-  </Layout>
+    <Layout>
+      <Box>
+        <Title as="p" size="large">
+          {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
+        </Title>
+      </Box>
+      <Gallery items={data.homeJson.gallery} />
+    </Layout>
+  </>
 );
 
 Index.propTypes = {

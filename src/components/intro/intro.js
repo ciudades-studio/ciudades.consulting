@@ -3,8 +3,10 @@ import Logo from '../../images/logo.svg';
 import './intro.css';
 
 const Intro = () => (
-  <div className="introContainer">
-      <div className="logoContainer"><Logo className="logo"/></div>
+  <div className="intro">
+      <div className="intro__logo__container">
+        <Logo className="logo"/>
+      </div>
   </div>
 );
 
