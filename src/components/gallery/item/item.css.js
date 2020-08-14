@@ -10,7 +10,7 @@ export const Title = styled.span`
 `;
 
 export const RoundBorderImage = styled(GatsbyImage)`
-  border-radius: ${props => props.pixels}px;
+  border-radius: ${props => props.borderRadius}px;
 `;
 
 export const Copy = styled.p`
