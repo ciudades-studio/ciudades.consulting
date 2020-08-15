@@ -6,6 +6,7 @@ export const Title = styled.span`
   display: block;
   font-size: 2rem;
   font-weight: 500;
+  font-family: DecimaMono;
   margin: 2rem 2rem 1rem;
 `;
 
@@ -16,6 +17,7 @@ export const RoundBorderImage = styled(GatsbyImage)`
 export const Copy = styled.p`
   color: #757575;
   margin: 0 2rem 2rem;
+  font-family: NeufileGrotesk
 
   ${MEDIA.TABLET`
     margin-bottom: 4rem;
