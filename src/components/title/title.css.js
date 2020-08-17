@@ -11,7 +11,7 @@ export const Text = styled.span`
         return '500';
     }
   }};
-  font-family: DecimaMono
+  font-family: decimamono
   font-size: ${({ size }) => () => {
     switch (size) {
       case 'large':

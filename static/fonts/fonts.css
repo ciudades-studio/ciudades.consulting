@@ -1,11 +1,11 @@
 @font-face {
-    font-family: DecimaMono;
+    font-family: decimamono;
     font-style: normal;
     src: url("DecimaMono.otf") format("otf"), url("DecimaMono.otf") format("otf");
     font-display: swap;
   }
   @font-face {
-    font-family: NeufileGrotesk;
+    font-family: neufilegrotesk;
     font-style: normal;
     src: url("NeufileGrotesk.ttf") format("ttf"), url("NeufileGrotesk.ttf")
         format("ttf");
