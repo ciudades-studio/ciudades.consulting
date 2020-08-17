@@ -13,7 +13,6 @@ const Layout = ({ data, children }) => (
   <div>
     <GlobalStyle />
     <Head />
-    <Header title={data.site.siteMetadata.siteTitle} />
     <Noscript>
       <iframe
         title="googletagmanager"
