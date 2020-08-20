@@ -17,11 +17,17 @@
   height: 60vmin;
   width: 60vmin;
   margin-right: 4%;
+  background-color: #f0f0e9;
+  clip-path: polygon(73% 18%, 73% 44%, 94% 44%, 94% 54%, 73% 54%, 73% 84%, 43% 84%, 7% 84%, 7% 18%, 40% 18%);
 }
 
 .logo {
   height: 100%;
   width: 100%;
+}
+
+g::selection {
+  background: #f0f0e9;
 }
 
 @media only screen and (max-width: 768px) {
