@@ -14,9 +14,11 @@
 }
 
 .intro__logo__container {
-  height: 30vw;
-  width: 30vw;
-  margin-right: 6%;
+  height: 60vmin;
+  width: 60vmin;
+  margin-right: 4%;
+  background-color: #f0f0e9;
+  clip-path: polygon(73% 18%, 73% 44%, 94% 44%, 94% 54%, 73% 54%, 73% 84%, 43% 84%, 7% 84%, 7% 18%, 40% 18%);
 }
 
 .logo {
@@ -24,11 +26,15 @@
   width: 100%;
 }
 
+g::selection {
+  background: #f0f0e9;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .intro__logo__container {
-    height: 55vw;
-    width: 55vw;
+    height: 85vmin;
+    width: 85vmin;
     margin-right: 0%;
   }
   .intro {
