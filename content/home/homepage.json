@@ -2,18 +2,18 @@
   "title": "Ciudades",
   "content": "intro.md",
   "gallery": [{
-    "title": "Web development",
-    "copy": "Become publicly available on Internet, reaching and engaging with your clients",
+    "title": "Product development",
+    "copy": "Get your ideas done turning thoughts into digital and web products while achieving business goals",
     "image": "../images/gallery/react-context.jpg"
   },
   {
-    "title": "Data visualization",
-    "copy": "Improve your company operations and workflow by using valuable information",
+    "title": "Data & cloud Engineering",
+    "copy": "Software Architecture consulting and execution",
     "image": "../images/gallery/page-transitions.jpg"
   },
   {
-    "title": "Real time reporting and automatization",
-    "copy": "Save time & money using good technology and efficient tools",
+    "title": "e-commerce & web development",
+    "copy": "Become publicly available on Internet, reaching and engaging with your clients",
     "image": "../images/gallery/intersection-observer.jpg"
   }]
 }
