@@ -1,3 +1,5 @@
+const withSass = require('@zeit/next-sass');
+
 module.exports = {
   reactStrictMode: true,
   webpack(config) {
@@ -9,3 +11,7 @@ module.exports = {
     return config;
   }
 }
+
+module.exports = withSass({
+	cssModules: true,
+});
