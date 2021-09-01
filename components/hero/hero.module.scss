@@ -1,50 +1,55 @@
 .hero {
-  align-items: center;
-  background-color: #f0f0e9;
+  @apply
+  bg-main
+  w-full
+  h-screen;
   background-image: radial-gradient(
-      #d8dad5 2px,
-      transparent 2px
+    #d8dad5 2px,
+    transparent 2px
   );
-  background-size: 30px 30px ;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  justify-content: flex-end;
-  width: 100%;
+  background-size: 1.875rem 1.875rem; 
+}
+
+.hero-wrapper {
+  @apply
+  flex
+  h-full
+  flex-col
+  justify-center
+  items-center
+  xl:grid
+  xl:gap-x-14
+  xl:grid-cols-2
+  xl:mx-10
+  xl:mx-16;
+}
+
+.hero-logo-container {
+  @apply
+  flex
+  justify-center
+  md:justify-end;
 }
 
 .hero-logo-wrapper {
-  background-color: #f0f0e9;
+  @apply
+  flex
+  bg-main
+  justify-center;
   clip-path: polygon(73% 18%, 73% 44%, 94% 44%, 94% 54%, 73% 54%, 73% 84%, 43% 84%, 7% 84%, 7% 18%, 40% 18%);
-  height: 60vmin;
-  margin-right: 4%;
-  width: 60vmin;
 }
 
 .hero-logo {
-  height: 100%;
-  width: 100%;
+  @apply
+  h-60vmin
+  w-60vmin;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .hero-logo-wrapper {
-    height: 85vmin;
-    margin-right: 0%;
-    width: 85vmin;
-  }
-  .hero-logo {
-    align-items: center;
-    background-color: #f0f0e9;
-    background-image: radial-gradient(
-        #d8dad5 2px,
-        transparent 2px
-    );
-    background-size: 30px 30px ;
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
-  }
+.hero-title {
+  @apply
+  text-3xl
+  font-light
+  xl:mt-2
+  xl:ml-5
+  text-font-color;
 }

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/hero/hero";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/page-styles/Home.module.scss";
 
 export default function Home() {
   return (
