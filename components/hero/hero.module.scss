@@ -13,14 +13,16 @@
 .hero-wrapper {
   @apply
   flex
+  pb-16
   h-full
   flex-col
   justify-center
   items-center
+  lg:mx-10
+  xl:pb-0
   xl:grid
   xl:gap-x-14
   xl:grid-cols-2
-  xl:mx-10
   xl:mx-16;
 }
 
