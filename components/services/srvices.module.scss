@@ -1,0 +1,44 @@
+.services {
+  @apply
+  w-full
+  h-screen
+  text-font-main-color;
+  background-image: radial-gradient(
+    #d8dad5 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem; 
+}
+
+.services-wrapper {
+  @apply
+  p-8
+  grid
+  lg:grid-cols-2
+  xl:p-16;
+}
+
+.services-title {
+  @apply
+  text-3xl;  
+}
+
+.services-text-wrapper {
+  @apply
+  flex
+  py-16
+  text-left
+  justify-end
+  items-center
+  lg:justify-center
+  lg:py-0
+}
+
+.services-text {
+  @apply
+  text-xl
+  w-9/12
+  lg:w-full
+  lg:text-3xl
+  lg:font-light
+}
