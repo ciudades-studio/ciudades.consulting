@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         "main": "#f0f0e9",
-        "font-color": "#697984"
+        "font-color": "#697984",
+        "font-main-color": "#798084"
       },
       height: {
         "60vmin": "60vmin"
