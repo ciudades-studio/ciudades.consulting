@@ -1,5 +1,7 @@
 import Head from "next/head";
+import React from "react";
 import Hero from "../components/hero/hero";
+import Services from "../components/services/services";
 import styles from "../styles/page-styles/Home.module.scss";
 
 export default function Home() {
@@ -11,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Services />
     </div>
   )
 }
