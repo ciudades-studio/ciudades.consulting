@@ -2,6 +2,8 @@ module.exports = {
   stories: ['../components/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
+    '@storybook/addon-links', 
+    '@storybook/addon-essentials'
   ],
 
   webpackFinal: async (baseConfig) => {
