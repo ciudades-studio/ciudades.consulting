@@ -1,6 +1,5 @@
 .services {
   @apply
-  w-full
   h-screen
   relative
   text-font-main-color;
@@ -28,18 +27,20 @@
 .services-text-wrapper {
   @apply
   flex
-  p-10
   text-left
   justify-end
   items-center
-  bg-white
   lg:justify-center
 }
 
 .services-text {
   @apply
+  p-4
+  pt-10
+  bg-white
   text-xl
   w-9/12
+  lg:p-10
   lg:w-full
   lg:text-3xl
   lg:font-light
@@ -105,7 +106,9 @@
     left: 10.2rem;
     background-color: bisque;  
   }
+}
 
+@media screen and (min-width: 1550px) {
   .services-title::before {
     content: '';
     opacity: 0.75;
@@ -114,7 +117,7 @@
     border-radius: 1rem;
     position: absolute;
     top: 43.9rem;
-    left: 122.75rem;
+    left: 90.8rem;
     background-color: bisque;  
   }
 }
