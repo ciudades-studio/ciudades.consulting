@@ -49,75 +49,81 @@
 @media screen and (min-width: 1024px) {
   .services::before {
     content: '';
-    opacity: 0.75;
-    height: 0.25rem;
-    width: 7.8rem;
-    border-radius: 1rem;
-    position: absolute;
-    top: 15.8rem;
     left: 12rem;
-    background-color: bisque;  
+    top: 15.8rem;
+    width: 7.8rem;
+    @apply
+    h-1
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 
   .services::after {
     content: '';
-    opacity: 0.75;
-    width: 0.25rem;
-    height: 7.8rem;
-    border-radius: 1rem;
-    position: absolute;
     top: 21.3rem;
     left: 17.7rem;
-    background-color: bisque;  
+    height: 7.8rem;
+    @apply
+    w-1
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 
   .services-wrapper::before {
     content: '';
-    opacity: 0.75;
     height: 0.25rem;
     width: 4rem;
-    border-radius: 1rem;
-    position: absolute;
     top: 40.2rem;
     left: 25.2rem;
-    background-color: bisque;  
+    @apply
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 
   .services-wrapper::after {
     content: '';
-    opacity: 0.75;
     width: 0.25rem;
     height: 4rem;
-    border-radius: 1rem;
-    position: absolute;
     top: 45.8rem;
     left: 47.7rem;
-    background-color: bisque;  
+    @apply
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 
   .services-title-wrapper::before {
     content: '';
-    opacity: 0.75;
     height: 0.25rem;
     width: 4rem;
-    border-radius: 1rem;
-    position: absolute;
     top: 45.8rem;
     left: 10.2rem;
-    background-color: bisque;  
+    @apply
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 }
 
 @media screen and (min-width: 1550px) {
   .services-title::before {
     content: '';
-    opacity: 0.75;
     height: 0.25rem;
     width: 4rem;
-    border-radius: 1rem;
-    position: absolute;
     top: 43.9rem;
     left: 90.8rem;
-    background-color: bisque;  
+    @apply
+    absolute
+    opacity-75
+    rounded-2xl
+    bg-bg-line
   }
 }
