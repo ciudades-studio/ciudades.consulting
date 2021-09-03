@@ -48,9 +48,14 @@
 
 .hero-title {
   @apply
+  mx-auto
   text-3xl
+  p-6
+  rounded
+  bg-main
   font-light
   xl:mt-2
   xl:ml-5
   text-font-color;
+  max-width: 24rem;
 }
