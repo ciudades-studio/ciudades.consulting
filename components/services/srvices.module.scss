@@ -13,17 +13,20 @@
 .services-wrapper {
   @apply
   p-8
-  grid
+  lg:grid
   lg:grid-cols-2
   xl:p-16;
 }
 
 .services-title {
   @apply
-  mt-10
+  mt-8
+  pt-1
+  p-6
+  text-center
   text-3xl  
   bg-white;
-  max-width: 15rem;
+  max-width: 18rem;
 }
 
 .services-text-wrapper {
