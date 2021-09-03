@@ -6,13 +6,14 @@ module.exports = {
       colors: {
         "main": "#f0f0e9",
         "font-color": "#697984",
-        "font-main-color": "#798084"
+        "font-main-color": "#798084",
+        "bg-line": "#ffe4c4"
       },
       height: {
-        "60vmin": "60vmin"
+        "60vmin": "60vmin",
       },
       width: {
-        "60vmin": "60vmin"
+        "60vmin": "60vmin",
       }
     },
   },
