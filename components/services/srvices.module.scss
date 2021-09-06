@@ -1,6 +1,6 @@
 .services {
   @apply
-  h-screen
+  h-component-height
   relative
   text-font-main-color;
   background-image: radial-gradient(
@@ -12,6 +12,7 @@
 
 .services-wrapper {
   @apply
+  h-1/2
   p-8
   lg:grid
   lg:grid-cols-2
@@ -20,29 +21,32 @@
 
 .services-title {
   @apply
-  mt-8
-  pt-1
-  p-6
+  mt-16
   text-center
-  text-3xl  
-  bg-white;
+  text-3xl;
   max-width: 18rem;
+}
+
+.services-title-span {
+  @apply
+  pb-2
+  bg-white;
 }
 
 .services-text-wrapper {
   @apply
   flex
   text-left
-  justify-end
+  justify-center
   items-center
   lg:justify-center
 }
 
 .services-text {
   @apply
-  mt-5
+  mt-12
   pt-5
-  pl-5
+  pl-0
   pb-5
   bg-white
   text-xl
@@ -52,11 +56,28 @@
   lg:font-light
 }
 
+.patterns {
+  @apply
+  h-1/2
+  relative
+}
+
 @media screen and (min-width: 1024px) {
+  .services-text-wrapper {
+    @apply
+    w-9/12
+    justify-end
+  }
+
+  .services-text {
+    @apply
+    pl-5
+  }
+
   .services::before {
     content: '';
     left: 12rem;
-    top: 15.8rem;
+    top: 17.7rem;
     width: 7.8rem;
     @apply
     h-1
@@ -66,9 +87,9 @@
     bg-bg-line
   }
 
-  .services::after {
+  .patterns::after {
     content: '';
-    top: 21.3rem;
+    top: 0.8rem;
     left: 17.7rem;
     height: 7.8rem;
     @apply
@@ -79,11 +100,11 @@
     bg-bg-line
   }
 
-  .services-wrapper::before {
+  .patterns::before {
     content: '';
     height: 0.25rem;
     width: 4rem;
-    top: 32.7rem;
+    top: 13.84rem;
     left: 25.2rem;
     @apply
     absolute
@@ -92,11 +113,11 @@
     bg-bg-line
   }
 
-  .services-wrapper::after {
+  .second-patterns::after {
     content: '';
     width: 0.25rem;
     height: 4rem;
-    top: 38.25rem;
+    top: 19.5rem;
     left: 40.2rem;
     @apply
     absolute
@@ -105,11 +126,11 @@
     bg-bg-line
   }
 
-  .services-title-wrapper::before {
+  .second-patterns::before {
     content: '';
     height: 0.25rem;
     width: 4rem;
-    top: 36.45rem;
+    top: 19.5rem;
     left: 10.2rem;
     @apply
     absolute
