@@ -11,6 +11,7 @@ module.exports = {
       },
       height: {
         "60vmin": "60vmin",
+        "component-height": "800px"
       },
       width: {
         "60vmin": "60vmin",
