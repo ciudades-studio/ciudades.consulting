@@ -25,5 +25,5 @@ const Services = ({ title="Services" }: IServices) => {
     </div>
   );
 }
- 
+
 export default Services;
