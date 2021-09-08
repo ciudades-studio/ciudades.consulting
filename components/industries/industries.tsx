@@ -1,6 +1,7 @@
+import { IIndustries } from "../../fixtures/industries.fixtures";
 import styles from "./industries.module.scss";
 
-export default function Industries() {
+export default function Industries({ industriesTitle, aboutText, closingText }: IIndustries) {
   return (
     <div className={styles["industries-wrapper"]}>
       <div className={styles["big-screen-wrapper"]}>
@@ -12,14 +13,14 @@ export default function Industries() {
             <div className={styles["industries-text-wrapper"]}>
               <div className={styles["industires-heading-wrapp"]}>
                 <h2 className={styles["industires-heading-text"]}>
-                  Healt Care
+                  {industriesTitle}
                 </h2>
               </div>
               <div className={styles["industries-text"]}>
                 <p className={styles["text"]}>
-                  Privacy and data protection standards, user authentication and authorization, mass notifications and IoT data engineering ...
+                  {aboutText}
                 </p>
-                <p>We’ve been there.</p>
+                <p>{closingText}</p>
               </div>
             </div>
           </div>
