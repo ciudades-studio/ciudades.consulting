@@ -3,6 +3,13 @@ import Head from "next/head";
 import Industries from "../components/industries/industries";
 import styles from "../styles/page-styles/Home.module.scss";
 
+const industriesContent = {
+  title: "Industries",
+  industriesTitle: "Health Care",
+  aboutText: "Privacy and data protection standards, user authentication and authorization, mass notifications and IoT data engineering ...",
+  closingText: "We’ve been there."
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,7 +19,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Hero /> */}
-      <Industries />
+      <Industries 
+        title={industriesContent.title} 
+        industriesTitle={industriesContent.industriesTitle} 
+        aboutText={industriesContent.aboutText} 
+        closingText={industriesContent.closingText} 
+      />
     </div>
   )
 }
