@@ -1,63 +1,65 @@
 .services {
   @apply
-  h-component-height
   relative
+  py-16
+  px-8
   text-font-main-color;
   background-image: radial-gradient(
     #d8dad5 2px,
     transparent 2px
   );
   background-size: 1.875rem 1.875rem;
+  height: 700px;
+}
+
+.big-screen-wrapper {
+  @apply
+  mx-2
+  xl:mx-auto
+  w-full;
+  max-width: 1440px;
 }
 
 .services-wrapper {
   @apply
-  h-1/2
-  p-8
-  lg:grid
-  lg:grid-cols-2
-  xl:p-16;
+  grid
+  gap-y-14
+  px-8
+  justify-center;
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: 750px 1fr;
+    max-width: 100%;
+  }
 }
 
 .services-title {
   @apply
-  mt-16
-  ml-1
-  xs:ml-4
-  xs:text-3xl
-  sm:text-center;
-  max-width: 18rem;
+  py-6
+  lg:text-2xl
+  md:text-xl
 }
 
 .services-title-span {
   @apply
-  pb-2
   bg-white;
 }
 
 .services-text-wrapper {
   @apply
-  flex
-  text-left
-  justify-center
-  items-center
-  lg:justify-center
+  w-full
+  2xl:flex;
+  justify-content: end;
 }
 
 .services-text {
   @apply
-  pt-5
-  pl-0
-  pb-5
-  mt-12
-  w-9/12
-  text-base
+  py-6
+  pr-0
+  pl-7
+  xl:w-4/5
   bg-white
-  sm:text-xl
-  md:ml-7
-  lg:w-full
-  lg:text-3xl
-  lg:font-light
+  md:text-xl
+  lg:text-2xl
 }
 
 .patterns {
@@ -70,8 +72,9 @@
   content: '';
   height: 0.25rem;
   width: 4rem;
-  top: 10.8rem;
-  left: 10.2rem;
+  top: 10.55rem;
+  left: 9.55rem;
+  z-index: -10;
   @apply
   absolute
   opacity-75
@@ -83,8 +86,9 @@
   content: '';
   width: 0.25rem;
   height: 4rem;
-  top: 14.6rem;
-  left: 17.67rem;
+  top: 14.3rem;
+  left: 17.05rem;
+  z-index: -10;
   @apply
   absolute
   opacity-75
@@ -96,70 +100,12 @@
   content: '';
   height: 0.25rem;
   width: 4rem;
-  top: 14.58rem;
-  left: 2.68rem;
+  top: 16.2rem;
+  left: 2rem;
+  z-index: -10;
   @apply
   absolute
   opacity-75
   rounded-2xl
   bg-bg-line
-}
-
-@media screen and (min-width: 768px) {
-  .patterns::before {
-    left: 25.2rem;
-  }
-  
-  .second-patterns::after {
-    left: 40.2rem;
-  }
-  
-  .second-patterns::before {
-    left: 10.2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .services-text-wrapper {
-    @apply
-    w-9/12
-    justify-end
-  }
-
-  .services-text {
-    @apply
-    pl-5
-  }
-
-  .services::before {
-    content: '';
-    left: 12rem;
-    top: 15.8rem;
-    width: 7.8rem;
-    @apply
-    h-1
-    absolute
-    opacity-75
-    rounded-2xl
-    bg-bg-line
-  }
-
-  .patterns::after {
-    content: '';
-    bottom: 14.5rem;
-    left: 17.7rem;
-    height: 7.8rem;
-    @apply
-    w-1
-    absolute
-    opacity-75
-    rounded-2xl
-    bg-bg-line
-  }
-}
-
-@media screen and (min-width: 1550px) {
-  .services-title::before {
-    top: 34.55rem;
-  }
 }
