@@ -1,7 +1,7 @@
 import { IServices } from "../../fixtures/services.fixture";
 import styles from "./srvices.module.scss";
 
-const Services = ({ title="Services" }: IServices) => {
+const Services = ({ title="Services", text }: IServices) => {
   return (
     <div className={styles.services}>
       <div className={styles["big-screen-wrapper"]}>
@@ -13,9 +13,7 @@ const Services = ({ title="Services" }: IServices) => {
           </div>
           <div className={styles["services-text-wrapper"]}>
             <p className={styles["services-text"]}>
-              We listen to your current needs, pain points during operations
-              and highlights when it comes to processes. From idea to roadmap,
-              from MVP to launch.
+              {text}
             </p>
           </div>
         </div>
