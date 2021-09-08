@@ -18,4 +18,4 @@ export default function Home({ title }: IServices) {
       <Services title={title} text={text} />
     </div>
   )
-}
+} 
