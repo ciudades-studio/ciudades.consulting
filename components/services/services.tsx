@@ -1,7 +1,7 @@
-import { IServices } from "../../fixtures/services.fixture";
+import { IService } from "../../fixtures/services.fixture";
 import styles from "./srvices.module.scss";
 
-const Services = ({ title="Services", text }: IServices) => {
+const Services = ({ title, text }: IService) => {
   return (
     <div className={styles.services}>
       <div className={styles["big-screen-wrapper"]}>
