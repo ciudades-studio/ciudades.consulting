@@ -16,8 +16,15 @@ module.exports = {
       width: {
         "60vmin": "60vmin",
       },
+      maxWidth: {
+        "big": "1440px",
+        "m-text": "75%"
+      },
       screens: {
         "xs": "500px"
+      },
+      padding: {
+        "xl": "90rem"
       }
     },
   },
