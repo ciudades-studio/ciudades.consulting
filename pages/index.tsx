@@ -1,12 +1,10 @@
 import Head from "next/head";
 import React from "react";
 import Hero from "../components/hero/hero";
-import Services from "../components/services/services";
-import { IServices } from "../fixtures/services.fixture";
+import Service from "../components/services/services";
+import services from "../fixtures/services.fixture";
 
-const text = "We listen to your current needs, pain points during operations and highlights when it comes to processes. From idea to roadmap, from MVP to launch."
-
-export default function Home({ title }: IServices) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -15,7 +13,7 @@ export default function Home({ title }: IServices) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title={"Product & Software"} />
-      <Services title={title} text={text} />
+      {services.map((service, index) => (<Service title={service.title} text={service.text} key={index}/>))} 
     </div>
   )
 } 
