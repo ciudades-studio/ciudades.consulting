@@ -4,7 +4,7 @@ import Industries from "../components/industries/industries";
 import styles from "../styles/page-styles/Home.module.scss";
 
 const industriesContent = {
-  title: "Industries",
+  imgUrl: "https://s3.us-west-2.amazonaws.com/noble.holdings.site/aguascalientes.jpeg",
   industriesTitle: "Health Care",
   aboutText: "Privacy and data protection standards, user authentication and authorization, mass notifications and IoT data engineering ...",
   closingText: "We’ve been there."
@@ -19,8 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Hero /> */}
-      <Industries 
-        title={industriesContent.title} 
+      <Industries
+        imgUrl={industriesContent.imgUrl}
         industriesTitle={industriesContent.industriesTitle} 
         aboutText={industriesContent.aboutText} 
         closingText={industriesContent.closingText} 
