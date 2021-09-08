@@ -1,13 +1,20 @@
 import { IIndustries } from "../../fixtures/industries.fixtures";
+import Image from "next/image";
 import styles from "./industries.module.scss";
 
-export default function Industries({ industriesTitle, aboutText, closingText }: IIndustries) {
+export default function Industries({ imgUrl, industriesTitle, aboutText, closingText }: IIndustries) {
   return (
     <div className={styles["industries-wrapper"]}>
       <div className={styles["big-screen-wrapper"]}>
         <div className={styles["industries-grid"]}>
           <picture className={styles["industries-img-wrapper"]}>
-            Image
+            <Image 
+              alt="image"
+              src={imgUrl}
+              width={300}
+              height={400}
+              objectFit="cover"
+            /> 
           </picture>
           <div className={styles["industries-text-wrapp"]}>
             <div className={styles["industries-text-wrapper"]}>

@@ -11,7 +11,8 @@
 .big-screen-wrapper {
   @apply
   mx-2
-  h-500
+  py-16
+  px-4
   xl:mx-auto;
   max-width: 1440px;
 }
@@ -19,6 +20,7 @@
 .industries-grid {
   @apply
   grid
+  gap-y-16
   h-full
   w-full
   items-center
@@ -32,6 +34,7 @@
   @apply
   flex
   justify-center
+  lg:justify-end
   order-last
   lg:order-first
 }
@@ -40,6 +43,7 @@
   @apply
   flex
   w-full
+  h-full
   flex-col
   items-center
 }
@@ -61,7 +65,7 @@
   lg:w-full
   text-xl
   font-bold
-  lg:text-4xl
+  lg:text-3xl
   items-center
   text-white
   bg-health-blue
