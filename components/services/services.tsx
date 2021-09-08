@@ -8,7 +8,9 @@ const Services = ({ title="Services", text }: IServices) => {
         <div className={styles["services-wrapper"]}>
           <div className={styles["services-title-wrapper"]}>
             <h2 className={styles["services-title"]}>
-              <span className={styles["services-title-span"]}>\\ {title}</span>
+              <span className={styles["services-title-span"]}>
+                \\ {title}
+              </span>
             </h2>
           </div>
           <div className={styles["services-text-wrapper"]}>
