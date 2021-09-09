@@ -18,7 +18,7 @@ module.exports = {
       }
     },
     maxWidth: {
-      "title-industires-w": '100rem'
+      "title-industry-w": '100rem'
     }
   },
   variants: {
