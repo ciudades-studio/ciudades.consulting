@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/hero-logo.svg';
 import styles from "./hero.module.scss";
 
 const Hero = () => {
