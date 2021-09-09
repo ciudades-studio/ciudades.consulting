@@ -11,8 +11,8 @@ export default function Industries({ imgUrl, industriesTitle, aboutText, closing
             <Image 
               alt="image"
               src={imgUrl}
-              width={300}
-              height={400}
+              width={310}
+              height={410}
               objectFit="cover"
             /> 
           </picture>
