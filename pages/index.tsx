@@ -1,14 +1,8 @@
 import Head from "next/head";
 import Hero from "../components/hero/hero";
 import Industries from "../components/industries/industries";
+import industries from "../fixtures/industries.fixtures";
 import styles from "../styles/page-styles/Home.module.scss";
-
-const industriesContent = {
-  imgUrl: "https://s3.us-west-2.amazonaws.com/noble.holdings.site/aguascalientes.jpeg",
-  industriesTitle: "Health Care",
-  aboutText: "Privacy and data protection standards, user authentication and authorization, mass notifications and IoT data engineering ...",
-  closingText: "We’ve been there."
-}
 
 export default function Home() {
   return (
@@ -19,12 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Industries
-        imgUrl={industriesContent.imgUrl}
-        industriesTitle={industriesContent.industriesTitle} 
-        aboutText={industriesContent.aboutText} 
-        closingText={industriesContent.closingText} 
-      />
+      {industries.map((industry, index) => (<Industries key={index} imgUrl={industry.imgUrl} aboutText={industry.aboutText} closingText={industry.closingText} industriesTitle={industry.industriesTitle} />))}
     </div>
   )
 }
