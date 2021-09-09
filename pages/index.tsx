@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/hero/hero";
-import Industries from "../components/industries/industries";
+import Industry from "../components/industry/industry";
 import industries from "../fixtures/industries.fixtures";
 import styles from "../styles/page-styles/Home.module.scss";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      {industries.map((industry, index) => (<Industries key={index} imgUrl={industry.imgUrl} aboutText={industry.aboutText} closingText={industry.closingText} industriesTitle={industry.industriesTitle} />))}
+      {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
     </div>
   )
 }
