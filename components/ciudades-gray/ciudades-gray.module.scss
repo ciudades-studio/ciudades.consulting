@@ -1,6 +1,6 @@
 .ciudades-gray-wrapper {
   @apply
-  bg-second-bg-color
+  bg-secondary-bg-color
   w-full;
   background-image: radial-gradient(
     #adadad 2px,
@@ -29,7 +29,7 @@
 .ciudades-gray-logo-wrapper {
   @apply
   flex
-  bg-second-bg-color
+  bg-secondary-bg-color
   justify-center;
   clip-path: polygon(73% 18%, 73% 44%, 94% 44%, 94% 54%, 73% 54%, 73% 84%, 43% 84%, 7% 84%, 7% 18%, 40% 18%);
 }
