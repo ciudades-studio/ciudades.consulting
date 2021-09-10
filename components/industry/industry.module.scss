@@ -21,9 +21,8 @@
 .industry-grid {
   @apply
   grid
-  gap-y-16
-  h-full
   w-full
+  gap-y-16
   items-center
   justify-center;
   @media screen and (min-width: 1024px) {
@@ -34,8 +33,10 @@
 .industry-img-wrapper {
   @apply
   flex
+  w-full
   order-last
   justify-center
+  lg:flex
   lg:justify-end
   lg:order-first;
 }

@@ -1,6 +1,7 @@
 import { IIndustry } from "../../fixtures/industries.fixtures";
 import Image from "next/image";
 import styles from "./industry.module.scss";
+import { isAbsolute } from "path/posix";
 
 export default function Industry({ imgUrl, title, text }: IIndustry) {
   return (
@@ -12,9 +13,10 @@ export default function Industry({ imgUrl, title, text }: IIndustry) {
               alt="image"
               src={imgUrl}
               width={500}
-              height={700}
+              height={500}
+              quality={65}
               objectFit="contain"
-              className={styles["industry-image"]}
+              objectPosition="top"
             /> 
           </picture>
           <div className={styles["industry-text-wrapp"]}>
