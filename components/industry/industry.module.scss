@@ -34,10 +34,10 @@
 .industry-img-wrapper {
   @apply
   flex
+  order-last
   justify-center
   lg:justify-end
-  order-last
-  lg:order-first
+  lg:order-first;
 }
 
 .industry-text-wrapp {

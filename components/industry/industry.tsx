@@ -11,9 +11,10 @@ export default function Industry({ imgUrl, title, text }: IIndustry) {
             <Image 
               alt="image"
               src={imgUrl}
-              width={300}
-              height={400}
-              objectFit="cover"
+              width={500}
+              height={700}
+              objectFit="contain"
+              className={styles["industry-image"]}
             /> 
           </picture>
           <div className={styles["industry-text-wrapp"]}>
