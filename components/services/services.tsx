@@ -1,7 +1,12 @@
+import parse from "html-react-parser";
+import marked from "marked";
 import { IService } from "../../fixtures/services.fixture";
 import styles from "./srvices.module.scss";
 
 const Services = ({ title, text }: IService) => {
+
+  const descriptionParsed = parse(marked(text || ""));
+
   return (
     <div className={styles.services}>
       <div className={styles["big-screen-wrapper"]}>
@@ -15,7 +20,7 @@ const Services = ({ title, text }: IService) => {
           </div>
           <div className={styles["services-text-wrapper"]}>
             <p className={styles["services-text"]}>
-              {text}
+              {descriptionParsed}
             </p>
           </div>
         </div>
