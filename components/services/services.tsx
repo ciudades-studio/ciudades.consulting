@@ -1,15 +1,20 @@
 import parse from "html-react-parser";
 import marked from "marked";
+import cn from "classnames";
 import { IService } from "../../fixtures/services.fixture";
 import styles from "./srvices.module.scss";
 
-const Services = ({ title, text }: IService) => {
+const Services = ({ title, text, pattern }: IService) => {
 
   const descriptionParsed = parse(marked(text || ""));
+  const linesClass = styles["lines"];
+  const servicesClass = styles["services"];
+  const hasLinesPattern = pattern === "lines";
+  const classes = cn(servicesClass, { [linesClass]: hasLinesPattern });
 
   return (
-    <div className={styles.services}>
-      <div className={styles["big-screen-wrapper"]}>
+    <div className={classes}>
+      <div className={styles["big-screen-wrapper" ]}>
         <div className={styles["services-wrapper"]}>
           <div className={styles["services-title-wrapper"]}>
             <h2 className={styles["services-title"]}>
