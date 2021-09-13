@@ -49,15 +49,15 @@
 .hero-title {
   @apply
   mx-auto
-  sm:text-2xl
-  md:text-4xl
-  py-3
-  px-6
+  py-1
+  px-2
   rounded
   bg-main
   font-light
+  sm:text-2xl
+  md:text-4xl
   xl:mt-2
-  xl:ml-5
+  xl:ml-6
   text-font-color;
   max-width: 28rem;
 }
