@@ -35,8 +35,8 @@
 .services-title {
   @apply
   py-6
-  lg:text-2xl
-  md:text-xl
+  text-2xl
+  lg:text-3xl
 }
 
 .services-title-span {
@@ -59,6 +59,6 @@
   pl-7
   xl:w-4/5
   bg-white
-  md:text-xl
+  text-xl
   lg:text-2xl
 }
