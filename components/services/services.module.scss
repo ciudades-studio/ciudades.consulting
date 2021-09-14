@@ -1,0 +1,64 @@
+.services {
+  @apply
+  relative
+  py-32
+  px-8
+  text-font-main-color;
+  background-image: radial-gradient(
+    #d8dad5 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem;
+  height: 700px;
+}
+
+.big-screen-wrapper {
+  @apply
+  mx-2
+  xl:mx-auto
+  w-full;
+  max-width: 1440px;
+}
+
+.services-wrapper {
+  @apply
+  grid
+  gap-y-14
+  md:px-8
+  justify-center;
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: 750px 1fr;
+    max-width: 100%;
+  }
+}
+
+.services-title {
+  @apply
+  py-6
+  text-3xl
+  lg:text-4xl
+}
+
+.services-title-span {
+  @apply
+  bg-white;
+}
+
+.services-text-wrapper {
+  @apply
+  w-full
+  2xl:flex;
+  justify-content: end;
+}
+
+.services-text {
+  white-space: pre-wrap;
+  @apply
+  py-6
+  sm:pr-0
+  sm:pl-7
+  xl:w-4/5
+  bg-white
+  text-xl
+  lg:text-2xl
+}
