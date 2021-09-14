@@ -47,7 +47,7 @@
   w-full
   h-full
   flex-col
-  items-center
+  md:items-center
 }
 
 .industry-text-wrapper {
@@ -61,22 +61,24 @@
 .industry-heading-wrapp {
   @apply
   flex
-  px-8
+  px-6
   py-4
-  w-72
-  lg:w-full
+  w-60
   text-xl
   font-bold
-  lg:text-3xl
+  rounded-lg
   items-center
   text-white
   bg-health-blue
-  rounded-lg
+  md:px-8
+  lg:w-full
+  lg:text-3xl
 }
 
 .industry-heading-text {
   @apply
   text-xl
+  md:text-3xl
 }
 
 .industry-text {
@@ -92,5 +94,8 @@
 
 .text {
   @apply
-  mb-8
+  text-lg
+  md:mb-8
+  md:text-2xl;
+  line-height: 1.7;
 }
