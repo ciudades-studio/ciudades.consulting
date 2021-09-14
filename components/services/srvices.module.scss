@@ -1,7 +1,7 @@
 .services {
   @apply
   relative
-  py-16
+  py-32
   px-8
   text-font-main-color;
   background-image: radial-gradient(
@@ -10,10 +10,6 @@
   );
   background-size: 1.875rem 1.875rem;
   height: 700px;
-}
-
-.lines {
-  background-color: cadetblue;
 }
 
 .big-screen-wrapper {
@@ -28,7 +24,7 @@
   @apply
   grid
   gap-y-14
-  px-8
+  md:px-8
   justify-center;
   @media screen and (min-width: 1280px) {
     grid-template-columns: 750px 1fr;
@@ -59,8 +55,8 @@
   white-space: pre-wrap;
   @apply
   py-6
-  pr-0
-  pl-7
+  sm:pr-0
+  sm:pl-7
   xl:w-4/5
   bg-white
   text-xl
