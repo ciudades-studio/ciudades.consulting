@@ -12,7 +12,7 @@
 .big-screen-wrapper {
   @apply
   mx-2
-  py-16
+  py-24
   px-4
   xl:mx-auto;
   max-width: 1440px;
@@ -72,6 +72,11 @@
   text-white
   bg-health-blue
   rounded-lg
+}
+
+.industry-heading-text {
+  @apply
+  text-xl
 }
 
 .industry-text {
