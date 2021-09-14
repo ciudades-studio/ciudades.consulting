@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title={"Product & Software"} />
-      {services.map((service, index) => (<Service key={index} title={service.title} text={service.text} pattern={"lines"}/>))} 
+      {services.map((service, index) => (<Service key={index} {...service} />))} 
     </div>
   )
 } 
