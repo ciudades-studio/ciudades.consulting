@@ -27,15 +27,18 @@ const ContentSection = ({ text }) => {
 
 const Service = ({ title, text, pattern }: IService) => {
 
-  const linesClass = styles["lines"];
-  const buildingsClass = styles["dots-buildings"];
-  const servicesClass = styles["services"];
-  const hasLinesPattern = pattern === "lines";
-  const hasBuildingsBg = pattern === "dots-buildings";
-  const classes = cn(servicesClass, { [linesClass]: hasLinesPattern }, { [buildingsClass]: hasBuildingsBg });
+  const getPatternClasses = () => {
+    const linesClass = styles["lines"];
+    const buildingsClass = styles["dots-buildings"];
+    const servicesClass = styles["services"];
+    const hasLinesPattern = pattern === "lines";
+    const hasBuildingsBg = pattern === "dots-buildings";
+    const classes = cn(servicesClass, { [linesClass]: hasLinesPattern }, { [buildingsClass]: hasBuildingsBg });
+    return classes;
+  };
 
   return (
-    <div className={classes}>
+    <div className={getPatternClasses()}>
       <div className={styles["big-screen-wrapper"]}>
         <div className={styles["services-wrapper"]}>
           <TitleSection title={title} />
