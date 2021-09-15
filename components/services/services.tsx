@@ -25,19 +25,15 @@ const ContentSection = ({ text }) => {
   );
 }
 
-const Pattern = ({ pattern }: { pattern: ServicePattern} ) => {
-  if (pattern === "lines") {
-    return <div></div>
-  }
-  return null;
-};
-
 const Service = ({ title, text, pattern }: IService) => {
 
   const linesClass = styles["lines"];
+  const buildingsClass = styles["dots-buildings"];
   const servicesClass = styles["services"];
   const hasLinesPattern = pattern === "lines";
-  const classes = cn(servicesClass, { [linesClass]: hasLinesPattern });
+  const hasBuildingsBg = pattern === "dots-buildings";
+  const classes = cn(servicesClass, { [linesClass]: hasLinesPattern }, { [buildingsClass]: hasBuildingsBg });
+
   return (
     <div className={classes}>
       <div className={styles["big-screen-wrapper"]}>
@@ -45,7 +41,6 @@ const Service = ({ title, text, pattern }: IService) => {
           <TitleSection title={title} />
           <ContentSection text={text} />
         </div>
-        {pattern && <Pattern pattern={pattern} />}
       </div>
     </div>
   );

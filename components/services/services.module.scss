@@ -62,3 +62,38 @@
   text-xl
   lg:text-2xl
 }
+
+.services.lines:before {
+  @apply
+  opacity-80
+  absolute
+  rounded
+  bg-bg-line;
+  content: "";
+  top: 21.45rem;
+  left: 13.967em;
+  height: 7.75rem;
+  width: 0.23rem;
+  display: none;
+}
+
+.services.lines:after {
+  @apply
+  opacity-80
+  absolute
+  rounded
+  bg-bg-line;
+  content: "";
+  top: 15.83rem;
+  left: 10.18em;
+  height: 0.24rem;
+  width: 7.75rem;
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .services.lines:before,
+  .services.lines:after {
+    display: block;
+  }
+}
