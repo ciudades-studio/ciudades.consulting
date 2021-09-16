@@ -1,0 +1,36 @@
+.main-wrapper {
+  @apply
+  flex
+  w-full
+  h-screen
+  items-center
+  text-white
+  justify-center;
+  background-image: radial-gradient(
+    #d8dad5 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem;
+}
+
+.text-wrapper {
+  @apply
+  py-8
+  px-40
+  text-4xl
+  rounded-2xl;
+  border: solid 2.5px white;
+}
+
+.blueColor {
+  @apply
+  bg-blue-bg
+}
+.greenColor {
+  @apply
+  bg-green-bg
+}
+.yellowColor {
+  @apply
+  bg-yellow-bg
+}
