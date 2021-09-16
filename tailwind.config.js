@@ -8,7 +8,10 @@ module.exports = {
         "font-color": "#697984",
         "health-blue": "#13CEED",
         "font-main-color": "#798084",
-        "bg-line": "#ffe4c4"
+        "bg-line": "#ffe4c4",
+        "blue-bg": "#12A1EA",
+        "green-bg": "#93CC3A",
+        "yellow-bg": "#FFCE30"
       },
       height: {
         "60vmin": "60vmin",
