@@ -6,7 +6,8 @@ import services from "../fixtures/services.fixture";
 import Industry from "../components/industry/industry";
 import industries from "../fixtures/industries.fixtures";
 import ColorfulComponent from "../components/colorful-component/colorful-component";
-import colors from "../fixtures/colorful-component.fixtures"; 
+import colors from "../fixtures/colorful-component.fixtures";
+import ConceptComponent from "../components/concept-component/concept-component"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       {services.map((service, index) => (<Service key={index} {...service} />))}
       {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
       {colors.map((color, index) => (<ColorfulComponent key={index} {...color} />))}
+      <ConceptComponent />
     </div>
   )
 } 
