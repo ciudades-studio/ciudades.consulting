@@ -1,0 +1,55 @@
+.concept-grid {
+  @apply
+  h-screen
+  lg:grid
+  lg:grid-cols-2;
+}
+
+.concept-wrapp {
+  @apply
+  flex
+  h-1/5
+  items-center
+  justify-center
+  bg-concept-blue
+  lg:h-full
+  lg:justify-start
+}
+
+.concept-text {
+  @apply
+  text-3xl
+  font-light
+  text-white
+  lg:ml-24
+  lg:text-4xl
+}
+
+.search-wrapp {
+  @apply
+  flex
+  px-16
+  h-4/5
+  items-center
+  justify-center
+  lg:h-full;
+  background-image: radial-gradient(
+    #d8dad5 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem; 
+}
+
+.search-text {
+  @apply
+  py-4
+  px-16
+  w-full
+  font-light
+  bg-white
+  rounded-full
+  text-concept-blue
+  md:py-4
+  md:text-4xl;
+  border: solid 2.5px #10CEED;
+}
