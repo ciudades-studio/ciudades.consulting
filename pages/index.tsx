@@ -3,7 +3,6 @@ import React from "react";
 import Hero from "../components/hero/hero";
 import Industry from "../components/industry/industry";
 import industries from "../fixtures/industries.fixtures";
-import styles from "../styles/page-styles/Home.module.scss";
 import Service from "../components/services/services";
 import services from "../fixtures/services.fixture";
 
@@ -16,7 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title={"Product & Software"} />
-      {services.map((service, index) => (<Service key={index} {...service} />))} 
+      {services.map((service, index) => (<Service key={index} {...service} />))}
+      {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
     </div>
   )
 } 
