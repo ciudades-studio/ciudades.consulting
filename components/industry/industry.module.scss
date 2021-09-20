@@ -1,0 +1,101 @@
+.industry-wrapper {
+  @apply
+  my-2
+  w-full;
+  background-image: radial-gradient(
+    #d8dad5 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem;
+}
+
+.big-screen-wrapper {
+  @apply
+  mx-2
+  py-24
+  px-4
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.industry-grid {
+  @apply
+  grid
+  w-full
+  gap-y-16
+  items-center
+  justify-center;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 60%;
+  }
+}
+
+.industry-img-wrapper {
+  @apply
+  flex
+  w-full
+  order-last
+  justify-center
+  lg:flex
+  lg:justify-end
+  lg:order-first;
+}
+
+.industry-text-wrapp {
+  @apply
+  flex
+  w-full
+  h-full
+  flex-col
+  md:items-center
+}
+
+.industry-text-wrapper {
+  @apply
+  grid
+  w-10/12
+  lg:w-6/12
+  gap-y-10
+}
+
+.industry-heading-wrapp {
+  @apply
+  flex
+  px-6
+  py-4
+  w-60
+  text-xl
+  font-bold
+  rounded-lg
+  items-center
+  text-white
+  bg-health-blue
+  md:px-8
+  lg:w-full
+  lg:text-3xl
+}
+
+.industry-heading-text {
+  @apply
+  text-xl
+  md:text-3xl
+}
+
+.industry-text {
+  @apply
+  flex
+  w-full
+  p-4
+  flex-col
+  bg-white
+  text-font-color
+  justify-center
+}
+
+.text {
+  @apply
+  text-lg
+  md:mb-8
+  md:text-2xl;
+  line-height: 1.7;
+}
