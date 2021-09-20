@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "main": "#f0f0e9",
         "font-color": "#697984",
+        "secondary-bg-color": "#798085",
         "health-blue": "#13CEED",
         "font-main-color": "#798084",
         "bg-line": "#F1F1EC"

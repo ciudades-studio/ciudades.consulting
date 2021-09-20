@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Hero from "../components/hero/hero";
+import CiudadesGray from "../components/ciudades-gray/ciudades-gray";
 import Industry from "../components/industry/industry";
 import industries from "../fixtures/industries.fixtures";
 import Service from "../components/services/services";
@@ -19,4 +20,4 @@ export default function Home() {
       {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
     </div>
   )
-} 
+}
