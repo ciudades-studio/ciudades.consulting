@@ -18,9 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero title={"Product & Software"} />
-      {services.map((service, index) => (<Service key={index} {...service} />))}
-      {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
-      {colors.map((color, index) => (<ColorfulComponent key={index} {...color} />))}
+      {services.map((service, index) => <Service key={index} {...service} />)}
+      {industries.map((industry, index) => <Industry key={index} {...industry} />)}
+      {colors.map((color, index) => <ColorfulComponent key={index} {...color} />)}
       <ConceptComponent />
     </div>
   )
