@@ -1,30 +1,40 @@
 import cn from "classnames";
 import styles from "./colorful-component.module.scss";
-import { IColorfullComponent } from "../../fixtures/colorful-component.fixtures";
+import { IColorfulComponent } from "../../fixtures/colorful-component.fixtures";
 
-const ColorfulComponent = ({ textTitle, bgTitle, bgColor }: IColorfullComponent) => {
+const ColorfulComponent = ({ textTitle, bgTitle, bgColor }: IColorfulComponent) => {
 
   const getBgColors = () => {
-    const blueBg = styles["blueColor"];
-    const greenBg = styles["greenColor"];
-    const yellowBg = styles["yellowColor"];
+    const blueBg = styles["blue-color"];
+    const greenBg = styles["green-color"];
+    const yellowBg = styles["yellow-color"];
     const mainWrapper = styles["main-wrapper"];
-    const hasBgBlue = bgColor === "blueColor";
-    const hasBgGreen = bgColor === "greenColor";
-    const hasBgYellow = bgColor === "yellowColor";
-    const classes = cn(mainWrapper, { [blueBg]: hasBgBlue }, { [greenBg]: hasBgGreen }, { [yellowBg]: hasBgYellow });
+    const hasBgBlue = bgColor === "blue-color";
+    const hasBgGreen = bgColor === "green-color";
+    const hasBgYellow = bgColor === "yellow-color";
+    const classes = cn(
+      mainWrapper, 
+      { [blueBg]: hasBgBlue }, 
+      { [greenBg]: hasBgGreen }, 
+      { [yellowBg]: hasBgYellow }
+    );
     return classes;
   };
 
   const getBgTitle = () => {
-    const blueBg = styles["blueColor"];
-    const greenBg = styles["greenColor"];
-    const yellowBg = styles["yellowColor"];
+    const blueBg = styles["blue-color"];
+    const greenBg = styles["green-color"];
+    const yellowBg = styles["yellow-color"];
     const textWrapper = styles["text-wrapper"];
-    const hasBgBlue = bgTitle === "blueColor";
-    const hasBgGreen = bgTitle === "greenColor";
-    const hasBgYellow = bgTitle === "yellowColor";
-    const classes = cn(textWrapper, { [blueBg]: hasBgBlue }, { [greenBg]: hasBgGreen }, { [yellowBg]: hasBgYellow });
+    const hasBgBlue = bgTitle === "blue-color";
+    const hasBgGreen = bgTitle === "green-color";
+    const hasBgYellow = bgTitle === "yellow-color";
+    const classes = cn(
+      textWrapper, 
+      { [blueBg]: hasBgBlue }, 
+      { [greenBg]: hasBgGreen }, 
+      { [yellowBg]: hasBgYellow }
+    );
     return classes;
   };
 
