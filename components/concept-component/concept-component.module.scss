@@ -5,7 +5,7 @@
   lg:grid-cols-2;
 }
 
-.concept-wrapp {
+.concept-wrapper {
   @apply
   flex
   h-1/5
@@ -16,7 +16,7 @@
   lg:justify-start
 }
 
-.concept-text {
+.concept {
   @apply
   text-3xl
   font-light
@@ -25,7 +25,7 @@
   lg:text-4xl
 }
 
-.search-wrapp {
+.bullets-wrapper {
   @apply
   flex
   px-16
@@ -40,7 +40,7 @@
   background-size: 1.875rem 1.875rem; 
 }
 
-.search-text {
+.bullet {
   @apply
   py-4
   px-16
@@ -52,4 +52,5 @@
   md:py-4
   md:text-4xl;
   border: solid 2.5px #10CEED;
+  list-style-type: none;
 }

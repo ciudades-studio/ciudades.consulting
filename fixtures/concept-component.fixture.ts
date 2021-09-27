@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 
-export interface IConceptBullets {
+export interface IConcept {
   concept: string,
   bullets: string[]
 }
@@ -10,4 +10,4 @@ const bulletItems = {
   bullets: ["Bullet"]
 }
 
-export default [ bulletItems ];
+export default bulletItems;

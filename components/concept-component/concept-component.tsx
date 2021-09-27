@@ -1,28 +1,27 @@
-import { IConceptBullets } from "../../fixtures/concept-component.fixture";
-import bullets from "../../fixtures/concept-component.fixture";
+import { IConcept } from "../../fixtures/concept-component.fixture";
 import styles from "./concept-component.module.scss";
 
-const ConceptWrapp = ({...bulletItems}: IConceptBullets) => {
+const Concept = (props: Omit<IConcept, "bullets">) => {
   return (
-    <div className={styles["concept-wrapp"]}>
-      <h2 className={styles["concept-text"]}>\\ {bulletItems.concept}:</h2>
+    <div className={styles["concept-wrapper"]}>
+      <h2 className={styles["concept"]}>\\ {props.concept}:</h2>
     </div>
   );
 }
 
-const SearchtWrapp = ({...bulletItems}: IConceptBullets) => {
+const Bullets = (props: Omit<IConcept, "concept">) => {
   return (
-    <ul className={styles["search-wrapp"]}>
-      {bulletItems.bullets.map((bullet, index) => <li key={index} className={styles["search-text"]}>{bullet}</li>)}
+    <ul className={styles["bullets-wrapper"]}>
+      {props.bullets.map((bullet, index) => <li key={index} className={styles["bullet"]}>{bullet}</li>)}
     </ul>
   );
 }
 
-const ConceptComponent = () => {
+const ConceptComponent = ({ concept, bullets }: IConcept) => {
   return (
     <div className={styles["concept-grid"]}>
-      <ConceptWrapp concept={"Concept"} bullets={[]} />
-      <SearchtWrapp concept={""} bullets={["Bullet"]}  />
+      <Concept concept={concept} />
+      <Bullets bullets={bullets}  />
     </div>
   );
 }
