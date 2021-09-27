@@ -21,10 +21,6 @@ export default function Home() {
       <Hero title={"Product & Software"} />
       {services.map((service, index) => <Service key={index} {...service} />)}
       {industries.map((industry, index) => <Industry key={index} {...industry} />)}
-      {colors.map((color, index) => <ColorfulComponent key={index} {...color} />)}
-      <ConceptComponent {...concepts} />
-      {services.map((service, index) => (<Service key={index} {...service} />))}
-      {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
     </div>
   )
 }
