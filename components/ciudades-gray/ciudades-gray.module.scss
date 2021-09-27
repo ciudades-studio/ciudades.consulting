@@ -1,0 +1,41 @@
+.ciudades-gray-wrapper {
+  @apply
+  bg-secondary-bg-color
+  w-full;
+  background-image: radial-gradient(
+    #adadad 2px,
+    transparent 2px
+  );
+  background-size: 1.875rem 1.875rem;
+  height: 100vh;
+}
+
+.big-screen-wrapper {
+  @apply
+  mx-2
+  py-16
+  px-4
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.ciudades-gray-container {
+  @apply
+  flex
+  justify-center
+  md:justify-end;
+}
+
+.ciudades-gray-logo-wrapper {
+  @apply
+  flex
+  bg-secondary-bg-color
+  justify-center;
+  clip-path: polygon(73% 18%, 73% 44%, 94% 44%, 94% 54%, 73% 54%, 73% 84%, 43% 84%, 7% 84%, 7% 18%, 40% 18%);
+}
+
+.ciudades-gray-logo {
+  @apply
+  h-60vmin
+  w-60vmin;
+}

@@ -6,13 +6,15 @@ module.exports = {
       colors: {
         "main": "#f0f0e9",
         "font-color": "#697984",
+        "secondary-bg-color": "#798085",
         "health-blue": "#13CEED",
         "concept-blue": "#10CEED",
         "font-main-color": "#798084",
         "bg-line": "#ffe4c4",
         "blue-bg": "#12A1EA",
         "green-bg": "#93CC3A",
-        "yellow-bg": "#FFCE30"
+        "yellow-bg": "#FFCE30",
+        "bg-line": "#F1F1EC"
       },
       height: {
         "60vmin": "60vmin",

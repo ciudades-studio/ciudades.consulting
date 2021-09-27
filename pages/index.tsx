@@ -1,10 +1,10 @@
 import Head from "next/head";
 import React from "react";
 import Hero from "../components/hero/hero";
-import Service from "../components/services/services";
-import services from "../fixtures/services.fixture";
 import Industry from "../components/industry/industry";
 import industries from "../fixtures/industries.fixtures";
+import Service from "../components/services/services";
+import services from "../fixtures/services.fixture";
 import ColorfulComponent from "../components/colorful-component/colorful-component";
 import colors from "../fixtures/colorful-component.fixtures";
 import ConceptComponent from "../components/concept-component/concept-component"
@@ -23,6 +23,8 @@ export default function Home() {
       {industries.map((industry, index) => <Industry key={index} {...industry} />)}
       {colors.map((color, index) => <ColorfulComponent key={index} {...color} />)}
       <ConceptComponent {...concepts} />
+      {services.map((service, index) => (<Service key={index} {...service} />))}
+      {industries.map((industry, index) => (<Industry key={index} {...industry} />))}
     </div>
   )
-} 
+}
