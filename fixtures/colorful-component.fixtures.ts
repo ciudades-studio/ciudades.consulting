@@ -1,36 +1,23 @@
 /* eslint-disable import/no-anonymous-default-export */
-
-export type DifferentBgColor = "blue-color" | "green-color" | "yellow-color";
-
-export type bgColorTtitle = "blue-color" | "green-color" | "yellow-color";
-
+type Color = "blue" | "green" | "yellow";
 export interface IColorfulComponent {
-  textTitle: string
-  bgColor?: DifferentBgColor
-  bgTitle?: bgColorTtitle
-}
-
-export interface IService {
   title: string
-  text: string
+  backgroundColor: Color
 }
 
 const blue = {
-  textTitle: "Cambio de tema A",
-  bgTitle: "blue-color" as bgColorTtitle,
-  bgColor: "blue-color" as DifferentBgColor
+  title: "Cambio de tema A",
+  backgroundColor: "blue" as Color
 }
 
 const green = {
-  textTitle: "Cambio de tema B",
-  bgTitle: "green-color" as DifferentBgColor,
-  bgColor: "green-color" as DifferentBgColor
+  title: "Cambio de tema B",
+  backgroundColor: "green" as Color
 }
 
 const yellow = {
-  textTitle: "Cambio de tema C",
-  bgTitle: "yellow-color" as DifferentBgColor,
-  bgColor: "yellow-color" as DifferentBgColor
+  title: "Cambio de tema C",
+  backgroundColor: "yellow" as Color
 }
 
 export default [ blue, green, yellow ]

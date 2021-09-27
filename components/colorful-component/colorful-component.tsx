@@ -1,26 +1,17 @@
 import cn from "classnames";
 import styles from "./colorful-component.module.scss";
-import colors from "../../fixtures/colorful-component.fixtures";
 import { IColorfulComponent } from "../../fixtures/colorful-component.fixtures";
 
-const ColorfulComponent = ({ textTitle, bgTitle, bgColor }: IColorfulComponent) => {
-  const getBgColors = () => {
-    const passColors = colors.map(() => styles[bgColor]);
+const ColorfulComponent = ({ title, backgroundColor }: IColorfulComponent) => {
+  const getBackgroundColor = () => {
     const mainWrapper = styles["main-wrapper"];
-    const classes = cn(mainWrapper, passColors);
-    return classes;
-  }
-
-  const getBgTitle = () => {
-    const passColors = colors.map(() => styles[bgTitle]);
-    const textWrapper = styles["text-wrapper"];
-    const classes = cn(textWrapper, passColors);
+    const classes = cn(mainWrapper, styles[backgroundColor]);
     return classes;
   }
 
   return (
-    <div className={getBgColors()}>
-      <h2 className={getBgTitle()}>{textTitle}</h2>
+    <div className={getBackgroundColor()}>
+      <h2 className={styles["text-wrapper"]}>{title}</h2>
     </div>
   );
 }
