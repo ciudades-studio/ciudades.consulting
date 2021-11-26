@@ -1,0 +1,18 @@
+.container {
+  @apply
+  grid-cols-4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply
+    grid-cols-8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply
+    grid-cols-12;
+  }
+}
