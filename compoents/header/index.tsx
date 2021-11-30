@@ -1,11 +1,5 @@
 import styles from './header.module.scss'
-
-const navItems = [
-  { item: "Services" },
-  { item: "Industries" },
-  { item: "About Us" },
-  { item: "Contact" }
-];
+import { navItems } from '../../fixtures/header.fixtures';
 
 const HeaderLogo = () => {
   return(
