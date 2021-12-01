@@ -1,0 +1,65 @@
+.services-container {
+  @apply
+  p-0;
+}
+
+.container {
+  @apply
+  mx-2
+  px-9
+  grid
+  gap-4
+  h-full
+  grid-cols-4
+  items-center
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.services-text-container {
+  @apply
+  py-8
+  w-full
+  col-span-full
+}
+
+.services-title {
+  @apply
+  text-bld
+  font-bold
+  text-primary-blue
+}
+
+.services-subtitle {
+  @apply
+  text-semiBld
+  font-semibold
+  text-text-blackText
+}
+
+.services-items {
+  @apply
+  pl-7
+  font-medium
+  text-semiMdm;
+}
+
+.service-item {
+  @apply
+  list-disc
+}
+
+@media (min-width: 768px) {
+  .contanier {
+    @apply
+    grid-cols-8
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply
+    gap-6
+    grid-cols-12
+  }
+}
