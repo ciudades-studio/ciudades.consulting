@@ -1,9 +1,14 @@
+// ts-igonre
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 
 //Components
 import Header from '../compoents/header'
+import Services from '../compoents/services'
+
+//Fixtures data
+import services from '../fixtures/services.fixtures'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      {services.map((service, index) => <Services key={index} {...service} />)}
     </div>
   )
 }
