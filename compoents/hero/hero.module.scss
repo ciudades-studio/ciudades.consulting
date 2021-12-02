@@ -1,0 +1,75 @@
+.hero-container {
+  height: 938px;
+  background-size: 1.875rem 1.875rem;
+  background-image: radial-gradient( #d8dad5 2px, transparent 2px);
+}
+
+.container {
+  @apply
+  mx-2
+  px-9
+  grid
+  gap-4
+  h-full
+  grid-cols-4
+  items-center
+  z-50
+  xl:mx-auto;
+  background-image: url('../../assets/hero-bg-buildings.svg');
+  max-width: 1440px;
+}
+
+.hero-content {
+  @apply
+  col-start-2
+  col-end-12
+}
+
+.hero-text-container {
+  @apply
+  p-4
+  w-full
+}
+
+.hero-main-text {
+  @apply
+  text-bld
+  font-bold
+  text-center
+}
+
+.hero-text {
+  @apply
+  mx-auto
+  text-mdm
+  max-w-2xl
+  font-normal
+  text-center
+}
+
+.hero-button-container {
+  @apply
+  w-full
+  text-center
+}
+
+.hero-button-contact,
+.hero-button-service {
+  @apply
+  mx-8
+}
+
+@media (min-width: 768px) {
+  .contanier {
+    @apply
+    grid-cols-8
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply
+    gap-6
+    grid-cols-12
+  }
+}
