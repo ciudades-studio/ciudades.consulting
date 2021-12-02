@@ -1,10 +1,13 @@
 import { IServices } from '../../fixtures/services.fixtures'
 import styles from './services.module.scss'
  
-const Services = ({ serviceTitle, serviceSubTitle, itemsDercription }: IServices) => {
+const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
+        <figure className={styles["services-img-container"]}>
+          <img src={imgServiceUrl} />
+        </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
             {serviceTitle}
@@ -24,5 +27,5 @@ const Services = ({ serviceTitle, serviceSubTitle, itemsDercription }: IServices
     </div>
   );
 }
- 
+
 export default Services;

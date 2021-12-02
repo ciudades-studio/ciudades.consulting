@@ -16,6 +16,11 @@
   max-width: 1440px;
 }
 
+.services-img-container {
+  @apply
+  hidden
+}
+
 .services-text-container {
   @apply
   py-8
@@ -61,5 +66,20 @@
     @apply
     gap-6
     grid-cols-12
+  }
+
+  .services-img-container {
+    @apply
+    block
+    col-start-1
+    col-end-3
+  }
+
+  .services-text-container {
+    @apply
+    py-8
+    w-full
+    col-start-4
+    col-end-12
   }
 }
