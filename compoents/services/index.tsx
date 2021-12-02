@@ -1,6 +1,6 @@
 import { IServices } from '../../fixtures/services.fixtures'
 import styles from './services.module.scss'
- 
+
 const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
   return (
     <div className={styles["services-container"]}>
