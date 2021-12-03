@@ -5,13 +5,13 @@ const Industries = ({ industriesTitle, industriesDescription, industrieImgUrl }:
   return (
     <div className={styles["industries-container"]}>
       <div className={styles.container}>
-        <div className={styles["industries-content-container"]}>
+        <figure className={styles["industries-image-container"]}>
+          <img src={industrieImgUrl} alt="image" />
+        </figure>
+        <div className={styles["industries-text-container"]}>
           <h1>{industriesTitle}</h1>
           <p>{industriesDescription}</p>
         </div>
-        <figure>
-          <img src={industrieImgUrl} alt="" />
-        </figure>
       </div>
     </div>
   );

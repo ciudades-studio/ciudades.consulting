@@ -16,10 +16,15 @@
   max-width: 1440px;
 }
 
-.industries-content-container {
+.industries-image-container {
   @apply
-  w-full
-  col-span-full
+  hidden
+}
+
+.industries-text-container {
+  @apply
+  col-start-7
+  col-end-12
 }
 
 @media (min-width: 768px) {
@@ -34,5 +39,12 @@
     @apply
     gap-6
     grid-cols-12
+  }
+
+  .industries-image-container {
+    @apply
+    block
+    col-start-1
+    col-end-7
   }
 }
