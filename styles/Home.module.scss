@@ -3,6 +3,19 @@
   grid-cols-4;
 }
 
+.industries-component-container {
+  @apply
+  mx-2
+  px-9
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.industries-component-title {
+  @apply
+  text-center
+}
+
 @media (min-width: 768px) {
   .container {
     @apply
