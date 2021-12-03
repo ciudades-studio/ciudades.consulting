@@ -1,0 +1,54 @@
+.aboutus-container {
+  @apply
+  p-0
+  text-text-whiteText
+  bg-primary-blue;
+  height: 1024px;
+}
+
+.container {
+  @apply
+  grid
+  h-full
+  grid-cols-6
+  grid-rows-4
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.aboutus-text-container {
+  @apply
+  w-full
+  py-36
+  items-center
+  justify-center
+  col-start-2
+  col-end-6
+  row-start-1
+  row-end-5;
+}
+
+.aboutus-title {
+  @apply
+  mb-11
+  mx-auto
+  font-bold;
+  font-size: 46px;
+  max-width: 689px;
+}
+
+.aboutus-description {
+  @apply
+  mx-auto
+  h-full
+  font-medium
+  text-mdm;
+  max-width: 689px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply
+    gap-6
+  }
+}
