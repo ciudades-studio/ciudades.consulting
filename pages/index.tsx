@@ -6,6 +6,9 @@ import styles from '../styles/Home.module.scss'
 import Header from '../compoents/header'
 import Hero from '../compoents/hero/index'
 
+import industries from "../fixtures/industries.fixture"
+import Industries from '../compoents/industries-component'
+
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +23,7 @@ const Home: NextPage = () => {
         heroMainText={'We offer the best cloud solutions customized to your needs'} 
         heroText={'Become a leader in Software Development for IT and Cloud Solutions is our vission.'} 
       />
+      {industries.map((industrie, index) => <Industries key={index} {...industrie} />)}
     </div>
   )
 }
