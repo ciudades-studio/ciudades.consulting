@@ -1,0 +1,69 @@
+.services-container {
+  @apply
+  p-0;
+}
+
+.container {
+  @apply
+  mx-2
+  px-9
+  grid
+  gap-4
+  h-full
+  grid-cols-4
+  items-center
+  md:grid-cols-8
+  lg:gap-6
+  lg:grid-cols-12
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.services-img-container {
+  @apply
+  hidden
+  lg:block
+  lg:col-start-1
+  lg:col-end-3
+}
+
+.services-text-container {
+  @apply
+  py-8
+  w-full
+  col-span-full
+  lg:py-8
+  lg:w-full
+  lg:col-start-4
+  lg:col-end-12
+}
+
+.services-title {
+  @apply
+  text-mdm
+  font-bold
+  text-primary-blue
+  md:text-semiBld
+  lg:text-bld
+  lg:font-bold
+}
+
+.services-subtitle {
+  @apply
+  font-semibold
+  text-text-blackText
+  md:text-mdm
+  lg:text-semiBld
+}
+
+.services-items {
+  @apply
+  pl-7
+  lg:font-medium
+  lg:text-semiMdm
+}
+
+.service-item {
+  @apply
+  list-disc
+}
