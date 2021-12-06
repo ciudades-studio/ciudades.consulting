@@ -13,7 +13,9 @@
   h-full
   grid-cols-4
   items-center
-  z-50
+  md:grid-cols-8
+  lg:gap-6
+  lg:grid-cols-12
   xl:mx-auto;
   background-image: url('../../assets/hero-bg-buildings.svg');
   max-width: 1440px;
@@ -23,12 +25,17 @@
   @apply
   col-start-1
   col-end-5
+  md:col-start-2
+  md:col-end-8
+  lg:col-start-2
+  lg:col-end-12
 }
 
 .hero-text-container {
   @apply
   px-1
   w-full
+  md:p-4
 }
 
 .hero-main-text {
@@ -36,6 +43,8 @@
   font-bold
   text-semiBld
   text-center
+  lg:text-bld
+  lg:font-bold
 }
 
 .hero-text {
@@ -43,6 +52,10 @@
   mx-auto
   text-semiMdm
   text-center
+  lg:mx-auto
+  lg:text-mdm
+  lg:max-w-2xl
+  lg:font-normal
 }
 
 .hero-button-container {
@@ -55,50 +68,4 @@
 .hero-button-service {
   @apply
   mx-8
-}
-
-@media (min-width: 768px) {
-  .container {
-    @apply
-    grid-cols-8
-  }
-
-  .hero-text-container {
-    @apply
-    p-4
-  }
-
-  .hero-content {
-    @apply
-    col-start-2
-    col-end-8
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    @apply
-    gap-6
-    grid-cols-12
-  }
-
-  .hero-content {
-    @apply
-    col-start-2
-    col-end-12
-  }
-
-  .hero-main-text {
-    @apply
-    text-bld
-    font-bold
-  }
-  
-  .hero-text {
-    @apply
-    mx-auto
-    text-mdm
-    max-w-2xl
-    font-normal
-  }
 }
