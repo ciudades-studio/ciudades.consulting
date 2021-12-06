@@ -12,6 +12,8 @@
   h-full
   grid-cols-4
   items-center
+  md:grid-cols-8
+  lg:grid-cols-12
   xl:mx-auto;
   max-width: 1440px;
 }
@@ -19,32 +21,14 @@
 .industries-image-container {
   @apply
   hidden
+  lg:block
+  lg:col-start-1
+  lg:col-end-6
 }
 
 .industries-text-container {
   @apply
-  col-start-7
-  col-end-12
-}
-
-@media (min-width: 768px) {
-  .contanier {
-    @apply
-    grid-cols-8
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    @apply
-    gap-6
-    grid-cols-12
-  }
-
-  .industries-image-container {
-    @apply
-    block
-    col-start-1
-    col-end-7
-  }
+  col-span-full
+  lg:col-start-7
+  lg:col-end-13
 }
