@@ -12,6 +12,7 @@
   h-full
   grid-cols-6
   grid-rows-4
+  lg:gap-6
   xl:mx-auto;
   max-width: 1440px;
 }
@@ -32,8 +33,8 @@
   @apply
   mb-11
   mx-auto
+  text-semiBld
   font-bold;
-  font-size: 46px;
   max-width: 689px;
 }
 
@@ -41,14 +42,14 @@
   @apply
   mx-auto
   h-full
+  text-semiMdm
   font-medium
-  text-mdm;
+  md:text-mdm;
   max-width: 689px;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    @apply
-    gap-6
+@media screen and (min-width: 1024px) {
+  .aboutus-title {
+    font-size: 46px;
   }
 }
