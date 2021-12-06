@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 
 //Components
 import Header from '../compoents/header'
-import Services from '../compoents/services'
+import Services from '../compoents/services-component/index'
 
 //Fixtures data
 import services from '../fixtures/services.fixtures'
