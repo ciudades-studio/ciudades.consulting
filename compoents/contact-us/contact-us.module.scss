@@ -10,7 +10,6 @@
   items-center
   justify-center
   lg:w-3/6;
-  height: 341px;
 }
 
 .title-container {
@@ -41,15 +40,51 @@
   md:text-semiBld
 }
 
-.form {
+.form-container {
   @apply
-  col-start-2
-  col-end-6
+  flex-col
 }
 
 .form-title {
   @apply
-  text-center
+  mt-32
+  mb-6
+  font-bold
+  text-semiBld;
+  max-width: 416px;
+}
+
+.form {
+  @apply
+  mb-32
+  col-start-2
+  col-end-6
+  flex
+  flex-col;
+}
+
+.form-label {
+  @apply
+  font-normal
+  text-rglr;
+  color: #767676;
+}
+
+.form-input {
+  @apply
+  p-2
+  mb-6
+  rounded;
+  border: solid 1px #767676;
+}
+
+.form-button {
+  @apply
+  rounded
+  px-2
+  py-2
+  text-text-whiteText
+  bg-primary-blue
 }
 
 @media screen and (min-width: 768px) {
@@ -60,5 +95,9 @@
 
   .title {
     font-size: 2.875rem;
+  }
+
+  .form-title {
+    font-size: 46px;
   }
 }
