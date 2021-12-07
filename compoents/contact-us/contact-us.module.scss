@@ -1,0 +1,64 @@
+.contactus-container {
+  @apply
+  lg:flex;
+}
+
+.title-container,
+.form-container {
+  @apply
+  flex
+  items-center
+  justify-center
+  lg:w-3/6;
+  height: 341px;
+}
+
+.title-container {
+  @apply
+  bg-text-blackText
+  text-text-whiteText;
+}
+
+.text-title-container {
+  @apply
+  col-start-2
+  col-end-7;
+  max-width: 482px;
+}
+
+.title {
+  @apply
+  mb-6
+  font-bold
+  text-semiMdm
+  text-center;
+}
+
+.subtitle {
+  @apply
+  text-center
+  font-semibold
+  md:text-semiBld
+}
+
+.form {
+  @apply
+  col-start-2
+  col-end-6
+}
+
+.form-title {
+  @apply
+  text-center
+}
+
+@media screen and (min-width: 768px) {
+  .title-container,
+  .form-container {
+    height: 682px;
+  }
+
+  .title {
+    font-size: 2.875rem;
+  }
+}
