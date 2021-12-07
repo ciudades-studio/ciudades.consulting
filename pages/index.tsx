@@ -4,6 +4,10 @@ import styles from '../styles/Home.module.scss'
 
 //Components
 import Header from '../compoents/header'
+import ContactUs from '../compoents/contact-us'
+
+// Content components
+import contactUsContent from '../fixtures/contact-us.fixture' ;
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ContactUs {...contactUsContent} />
     </div>
   )
 }
