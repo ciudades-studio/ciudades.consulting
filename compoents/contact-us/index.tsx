@@ -32,7 +32,10 @@ export const ContactForm = () => {
 const ContactUs = ({ contactUsTtitle, contactUsSubtitle }: IContactUs) => {
   return (
     <div className={styles["contactus-container"]}>
-      <TitleContainer contactUsTtitle={contactUsTtitle} contactUsSubtitle={contactUsSubtitle} />
+      <TitleContainer 
+        contactUsTtitle={contactUsTtitle} 
+        contactUsSubtitle={contactUsSubtitle} 
+      />
       <ContactForm />
     </div>
   );
