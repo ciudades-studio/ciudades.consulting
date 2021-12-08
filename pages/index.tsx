@@ -4,8 +4,6 @@ import styles from '../styles/Home.module.scss'
 
 //Components
 import Header from '../compoents/header'
-import Hero from '../compoents/hero/index'
-
 
 const Home: NextPage = () => {
   return (
@@ -16,10 +14,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Hero 
-        heroMainText={'We offer the best cloud solutions customized to your needs'} 
-        heroText={'Become a leader in Software Development for IT and Cloud Solutions is our vission.'} 
-      />
     </div>
   )
 }
