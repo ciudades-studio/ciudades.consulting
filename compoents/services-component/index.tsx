@@ -1,4 +1,5 @@
 import { IServices } from '../../fixtures/services.fixtures'
+import Image from 'next/image'
 import styles from './services.module.scss'
 
 const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
@@ -6,7 +7,7 @@ const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceU
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <img src={imgServiceUrl} />
+          <Image src={imgServiceUrl} width={"333px"} height={"239px"} />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
