@@ -4,6 +4,11 @@ import styles from '../styles/Home.module.scss'
 
 //Components
 import Header from '../compoents/header'
+import Hero from '../compoents/hero/index'
+
+// Content components
+import heroContent from '../fixtures/hero.fixtures'
+
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Hero {...heroContent}/>
     </div>
   )
 }
