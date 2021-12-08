@@ -16,6 +16,7 @@
   @apply
   bg-text-blackText
   text-text-whiteText;
+  height: 341px;
 }
 
 .text-title-container {
@@ -50,8 +51,9 @@
   mt-32
   mb-6
   font-bold
+  text-left
   text-semiBld;
-  max-width: 416px;
+  width: 200px;
 }
 
 .form {
@@ -80,11 +82,21 @@
 
 .form-button {
   @apply
+  p-3
+  w-48
   rounded
-  px-2
-  py-2
   text-text-whiteText
   bg-primary-blue
+}
+
+.footer {
+  @apply
+  flex
+  items-center
+  justify-center
+  bg-text-blackText
+  text-text-whiteText;
+  height: 115px;
 }
 
 @media screen and (min-width: 768px) {
@@ -98,6 +110,11 @@
   }
 
   .form-title {
+    width: 416px;
     font-size: 46px;
+  }
+
+  .form {
+    width: 416px;
   }
 }

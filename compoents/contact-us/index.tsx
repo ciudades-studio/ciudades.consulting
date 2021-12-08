@@ -29,15 +29,27 @@ export const ContactForm = () => {
   );
 }
 
+export const Footer = () => {
+  return (
+    <div className={styles.footer}>
+      <span>Ciudades.dev © 2021, 2022</span>
+    </div>
+  );
+}
+
+
 const ContactUs = ({ contactUsTtitle, contactUsSubtitle }: IContactUs) => {
   return (
-    <div className={styles["contactus-container"]}>
-      <TitleContainer 
-        contactUsTtitle={contactUsTtitle} 
-        contactUsSubtitle={contactUsSubtitle} 
-      />
-      <ContactForm />
-    </div>
+    <>
+      <div className={styles["contactus-container"]}>
+        <TitleContainer 
+          contactUsTtitle={contactUsTtitle} 
+          contactUsSubtitle={contactUsSubtitle} 
+        />
+        <ContactForm />
+      </div>
+      <Footer />
+    </>
   );
 }
 
