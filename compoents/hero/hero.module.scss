@@ -67,5 +67,20 @@
 .hero-button-contact,
 .hero-button-service {
   @apply
+  py-3
+  px-16
   mx-8
+}
+
+.hero-button-contact {
+  @apply
+  mb-6
+  bg-primary-blue
+  md:mb-0
+}
+
+.hero-button-service {
+  @apply
+  text-primary-lightBlue
+  bg-bgColors-grayBlue
 }
