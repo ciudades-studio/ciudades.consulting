@@ -13,7 +13,10 @@
 
 .industries-component-title {
   @apply
-  text-center
+  font-bold
+  text-center;
+  margin-bottom: 102px;
+  font-size: 46px;
 }
 
 @media (min-width: 768px) {
