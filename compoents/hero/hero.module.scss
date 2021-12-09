@@ -40,6 +40,7 @@
 
 .hero-main-text {
   @apply
+  mb-6
   font-bold
   text-semiBld
   text-center
@@ -49,6 +50,7 @@
 
 .hero-text {
   @apply
+  mb-6
   mx-auto
   text-semiMdm
   text-center
@@ -70,12 +72,15 @@
   py-3
   px-16
   mx-8
+  mb-6
+  rounded
 }
 
 .hero-button-contact {
   @apply
   mb-6
   bg-primary-blue
+  text-text-whiteText
   md:mb-0
 }
 
