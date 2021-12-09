@@ -8,4 +8,4 @@ const heroContent = {
   heroText: "Become a leader in Software Development for IT and Cloud Solutions is our vission.",
 }
 
-export default heroContent;
+export default heroContent
