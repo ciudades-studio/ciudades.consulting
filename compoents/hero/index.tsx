@@ -1,6 +1,6 @@
 import { IHero } from '../../fixtures/hero.fixtures'
 import styles from './hero.module.scss'
-
+ 
 export const HetoTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
     <div className={styles["hero-text-container"]}>
