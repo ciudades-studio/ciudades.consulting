@@ -6,8 +6,8 @@ import styles from '../styles/Home.module.scss'
 import Header from '../compoents/header'
 import Hero from '../compoents/hero/index'
 
-import industries from '../fixtures/industries.fixture'
-import Industries from '../compoents/industries-component'
+// Content components
+import heroContent from '../fixtures/hero.fixtures'
 
 
 const Home: NextPage = () => {
@@ -19,14 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Hero 
-        heroMainText={'We offer the best cloud solutions customized to your needs'} 
-        heroText={'Become a leader in Software Development for IT and Cloud Solutions is our vission.'} 
-      />
-      <div className={styles["industries-component-container"]}>
-        <h2 className={styles["industries-component-title"]}>Industries</h2>
-        {industries.map((industrie, index) => <Industries key={index} {...industrie} />)}
-      </div>
+      <Hero {...heroContent}/>
     </div>
   )
 }
