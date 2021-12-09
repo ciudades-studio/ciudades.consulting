@@ -6,7 +6,8 @@
 .container {
   @apply
   mx-2
-  px-9
+  mb-8
+  md:px-9
   grid
   gap-4
   h-full
@@ -31,4 +32,18 @@
   col-span-full
   lg:col-start-7
   lg:col-end-13
+}
+
+.industries-text-title {
+  @apply
+  mb-8
+  font-semibold
+  md:mb-16
+  md:text-semiBld
+}
+
+.industries-text-description {
+  @apply
+  font-medium
+  md:text-mdm
 }
