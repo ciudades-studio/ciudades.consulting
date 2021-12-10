@@ -1,0 +1,49 @@
+.industries-container {
+  @apply
+  p-0;
+}
+
+.container {
+  @apply
+  mx-2
+  mb-8
+  md:px-9
+  grid
+  gap-4
+  h-full
+  grid-cols-4
+  items-center
+  md:grid-cols-8
+  lg:grid-cols-12
+  xl:mx-auto;
+  max-width: 1440px;
+}
+
+.industries-image-container {
+  @apply
+  hidden
+  lg:block
+  lg:col-start-1
+  lg:col-end-6
+}
+
+.industries-text-container {
+  @apply
+  col-span-full
+  lg:col-start-7
+  lg:col-end-13
+}
+
+.industries-text-title {
+  @apply
+  mb-8
+  font-semibold
+  md:mb-16
+  md:text-semiBld
+}
+
+.industries-text-description {
+  @apply
+  font-medium
+  md:text-mdm
+}
