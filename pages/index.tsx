@@ -4,6 +4,10 @@ import styles from '../styles/Home.module.scss'
 
 // Components
 import Header from '../compoents/header'
+import ContactUs from '../compoents/contact-us'
+
+// Content components
+import contactUsContent from '../fixtures/contact-us.fixture' ;
 import Hero from '../compoents/hero/index'
 import Industries from '../compoents/industries-component'
 import AboutUs from '../compoents/about-us'
@@ -25,6 +29,7 @@ const Home: NextPage = () => {
       <Hero {...heroContent}/>
       {industriesContent.map((servindustrieContentice, index) => <Industries key={index} {...servindustrieContentice} />)}
       <AboutUs {...aboutUsContent} />
+      <ContactUs {...contactUsContent} />
     </div>
   )
 }
