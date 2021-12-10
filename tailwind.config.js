@@ -30,7 +30,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      lora: ['Lora', 'serif'],
+      lora: ['Lora', 'sans-serif'],
     },
     fontSize: {
       bld: '64px',
