@@ -1,0 +1,91 @@
+.hero-container {
+  height: 938px;
+  background-size: 1.875rem 1.875rem;
+  background-image: radial-gradient( #d8dad5 2px, transparent 2px);
+}
+
+.container {
+  @apply
+  mx-0
+  px-0
+  grid
+  gap-4
+  h-full
+  grid-cols-4
+  items-center
+  md:grid-cols-8
+  lg:gap-6
+  lg:grid-cols-12
+  xl:mx-auto;
+  background-image: url('../../assets/hero-bg-buildings.svg');
+  max-width: 1440px;
+}
+
+.hero-content {
+  @apply
+  col-start-1
+  col-end-5
+  md:col-start-2
+  md:col-end-8
+  lg:col-start-2
+  lg:col-end-12
+}
+
+.hero-text-container {
+  @apply
+  px-1
+  w-full
+  md:p-4
+}
+
+.hero-main-text {
+  @apply
+  mb-6
+  font-bold
+  text-semiBld
+  text-center
+  lg:text-bld
+  lg:font-bold
+}
+
+.hero-text {
+  @apply
+  mb-6
+  mx-auto
+  text-semiMdm
+  text-center
+  lg:mx-auto
+  lg:text-mdm
+  lg:max-w-2xl
+  lg:font-normal
+}
+
+.hero-button-container {
+  @apply
+  w-full
+  text-center
+}
+
+.hero-button-contact,
+.hero-button-service {
+  @apply
+  py-3
+  px-16
+  mx-8
+  mb-6
+  rounded
+}
+
+.hero-button-contact {
+  @apply
+  mb-6
+  bg-primary-blue
+  text-text-whiteText
+  md:mb-0
+}
+
+.hero-button-service {
+  @apply
+  text-primary-lightBlue
+  bg-bgColors-grayBlue
+}
