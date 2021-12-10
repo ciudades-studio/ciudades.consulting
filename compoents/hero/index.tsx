@@ -43,4 +43,4 @@ const Hero = ({ heroMainText, heroText }: IHero) => {
   );
 }
 
-export default Hero;
+export default Hero

@@ -2,14 +2,16 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 
-//Components
+// Components
 import Header from '../compoents/header'
 import Hero from '../compoents/hero/index'
 import Industries from '../compoents/industries-component'
+import AboutUs from '../compoents/about-us'
 
 // Content components
 import heroContent from '../fixtures/hero.fixtures'
 import industriesContent from '../fixtures/industries.fixture'
+import aboutUsContent from '../fixtures/about-us-fixture'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +24,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero {...heroContent}/>
       {industriesContent.map((servindustrieContentice, index) => <Industries key={index} {...servindustrieContentice} />)}
+      <AboutUs {...aboutUsContent} />
     </div>
   )
 }
