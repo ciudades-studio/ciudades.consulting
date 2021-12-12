@@ -3,11 +3,19 @@ import Image from 'next/image'
 import styles from './services.module.scss'
 
 const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
+
+  const myLoader = () => `${imgServiceUrl}`;
+
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <Image src={imgServiceUrl} width={"333px"} height={"239px"} />
+          <Image 
+            width={"333px"} 
+            height={"239px"}
+            loader={myLoader} 
+            src={imgServiceUrl}
+          />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>

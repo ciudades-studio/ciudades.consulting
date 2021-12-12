@@ -24,7 +24,7 @@
   hidden
   lg:block
   lg:col-start-1
-  lg:col-end-3
+  lg:col-end-5
 }
 
 .services-text-container {
@@ -34,7 +34,7 @@
   col-span-full
   lg:py-8
   lg:w-full
-  lg:col-start-4
+  lg:col-start-6
   lg:col-end-12
 }
 
@@ -60,7 +60,8 @@
   @apply
   pl-7
   lg:font-medium
-  lg:text-semiMdm
+  lg:text-semiMdm;
+  max-width: 600px;
 }
 
 .service-item {
