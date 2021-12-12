@@ -1,7 +1,7 @@
 export interface IServices {
   serviceTitle: string
   serviceSubTitle: string
-  itemsDercription: []
+  itemsDercription: string[]
   imgServiceUrl: string
 }
 
