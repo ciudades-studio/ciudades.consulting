@@ -13,6 +13,7 @@ module.exports = {
       },
       text: {
         whiteText: '#FFFFFF',
+        grayText: '606060',
         blackText: '#262626',
       },
       bgColors: {
@@ -30,7 +31,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      lora: ['Lora', 'serif'],
+      lora: ['Lora', 'sans-serif'],
     },
     fontSize: {
       bld: '64px',
