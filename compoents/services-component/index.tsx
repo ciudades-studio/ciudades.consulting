@@ -25,8 +25,8 @@ const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceU
             {serviceSubTitle}
           </h3>
           <ul className={styles["services-items"]}>
-            {itemsDercription.map(item => (
-              <li className={styles["service-item"]}>
+            {itemsDercription.map((item, index) => (
+              <li className={styles["service-item"]} key={index}>
                 {item}
               </li>))
             }
