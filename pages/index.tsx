@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {services.map((service, index) => <Services key={index} {...service} />)}
       <Hero {...heroContent}/>
+      {services.map((service, index) => <Services key={index} {...service} />)}
       {industriesContent.map((servindustrieContentice, index) => <Industries key={index} {...servindustrieContentice} />)}
       <AboutUs {...aboutUsContent} />
       <ContactUs {...contactUsContent} />
