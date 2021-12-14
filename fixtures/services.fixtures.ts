@@ -1,4 +1,4 @@
-export interface IServices {
+export interface IService {
   serviceTitle: string
   serviceSubTitle: string
   itemsDercription: string[]
