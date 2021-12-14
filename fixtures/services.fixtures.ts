@@ -1,4 +1,4 @@
-export interface IServices {
+export interface IService {
   serviceTitle: string
   serviceSubTitle: string
   itemsDercription: string[]
@@ -13,7 +13,7 @@ const digitalProducts = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../assets/services-assets/color_x5F_0.svg"
+  imgServiceUrl: "/../../assets/services-assets/color_x5F_0.svg"
 }
 
 const iotDevelopment = {
@@ -24,7 +24,7 @@ const iotDevelopment = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../assets/services-assets/color_x5F_1.svg"
+  imgServiceUrl: "/../../assets/services-assets/color_x5F_1.svg"
 }
 
 const cloudAndArchitecture = {
@@ -35,7 +35,7 @@ const cloudAndArchitecture = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../assets/services-assets/color_x5F_2.svg"
+  imgServiceUrl: "/../../assets/services-assets/color_x5F_2.svg"
 }
 
 export default [ digitalProducts, iotDevelopment, cloudAndArchitecture ];

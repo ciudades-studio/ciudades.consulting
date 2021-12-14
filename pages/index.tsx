@@ -4,23 +4,18 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 
 // Components
-import Header from '../compoents/header'
-import Services from '../compoents/services-component/index'
-
-//Fixtures data
-import services from '../fixtures/services.fixtures'
-import ContactUs from '../compoents/contact-us'
-
-// Content components
-import contactUsContent from '../fixtures/contact-us.fixture' ;
-import Hero from '../compoents/hero/index'
-import Industries from '../compoents/industries-component'
-import AboutUs from '../compoents/about-us'
+import Header from '../components/header'
+import Hero from '../components/hero/index'
+import Industries from '../components/industries-component'
+import AboutUs from '../components/about-us'
+import ContactUs from '../components/contact-us'
 
 // Content components
 import heroContent from '../fixtures/hero.fixtures'
 import industriesContent from '../fixtures/industries.fixture'
 import aboutUsContent from '../fixtures/about-us-fixture'
+import contactUsContent from '../fixtures/contact-us.fixture' ;
+import ServicesSection from '../components/services-section'
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +27,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Hero {...heroContent}/>
-      {services.map((service, index) => <Services key={index} {...service} />)}
+      <ServicesSection />
       {industriesContent.map((servindustrieContentice, index) => <Industries key={index} {...servindustrieContentice} />)}
       <AboutUs {...aboutUsContent} />
       <ContactUs {...contactUsContent} />

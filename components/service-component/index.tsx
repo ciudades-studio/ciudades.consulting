@@ -1,21 +1,14 @@
-import { IServices } from '../../fixtures/services.fixtures'
+import { IService } from '../../fixtures/services.fixtures'
+import styles from './service.module.scss'
 import Image from 'next/image'
-import styles from './services.module.scss'
+import ServicesImageExample from '../../assets/services-assets/color_x5F_1.png'
 
-const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
-
-  const myLoader = () => `${imgServiceUrl}`;
-
+const Service = ({ serviceTitle, serviceSubTitle, itemsDercription }: IService) => {
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <Image 
-            width={"333px"} 
-            height={"239px"}
-            loader={myLoader} 
-            src={imgServiceUrl}
-          />
+          <Image src={ServicesImageExample} width={500} height={500} />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
@@ -37,4 +30,4 @@ const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceU
   );
 }
 
-export default Services;
+export default Service;

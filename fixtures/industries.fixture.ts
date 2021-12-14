@@ -12,7 +12,7 @@ const healthCare = {
   engineering.
   
   We’ve been there.`,
-  industrieImgUrl: "/../../assets/industries01.png"
+  industrieImgUrl: "/../assets/industries-assets/industries01.png"
 }
 
 const contentNmedia = {
@@ -25,7 +25,7 @@ const contentNmedia = {
   Comcast, Audible and Medio Tiempo have 
   been part of our challenges and great 
   experiences.`,
-  industrieImgUrl: "/../../assets/industries02.png"
+  industrieImgUrl: "/../assets/industries02.png"
 }
 
 const retail = {
@@ -41,7 +41,7 @@ const retail = {
   Then we help getting insights for enhancing 
   operations and customer acquisition
   using their data.`,
-  industrieImgUrl: "/../../assets/industries03.png"
+  industrieImgUrl: "/../assets/industries03.png"
 }
 
 export default [ healthCare, contentNmedia, retail ];
