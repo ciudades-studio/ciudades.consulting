@@ -1,5 +1,6 @@
 import { IHero } from '../../fixtures/hero.fixtures'
 import styles from './hero.module.scss'
+import Link from 'next/link'
  
 export const HetoTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
@@ -18,10 +19,10 @@ export const HeroButtons = () => {
   return (
     <div className={styles["hero-button-container"]}>
       <button className={styles["hero-button-contact"]}>
-        <a href="/">Contact</a>
+        <Link href="/">Contact</Link>
       </button>
       <button className={styles["hero-button-service"]}>
-        <a href="/">Services</a>
+        <Link href="/">Services</Link>
       </button>
     </div>
   );

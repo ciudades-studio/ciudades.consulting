@@ -8,7 +8,7 @@ const Service = ({ serviceTitle, serviceSubTitle, itemsDercription }: IService) 
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <Image src={ServicesImageExample} width={500} height={500} />
+          <Image src={ServicesImageExample} width={500} height={500} alt='example image' />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>

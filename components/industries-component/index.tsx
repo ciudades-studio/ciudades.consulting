@@ -8,7 +8,7 @@ const Industries = ({ industriesTitle, industriesDescription }: IIndustries) => 
     <div className={styles["industries-container"]}>
       <div className={styles.container}>
         <figure className={styles["industries-image-container"]}>
-          <Image src={IndustrieServiceExample} alt="image" width={"333px"} height={"239px"} />
+          <Image src={IndustrieServiceExample} width={"333px"} height={"239px"} alt='example image' />
         </figure>
         <div className={styles["industries-text-container"]}>
           <h1 className={styles["industries-text-title"]}>{industriesTitle}</h1>
