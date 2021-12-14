@@ -1,16 +1,17 @@
-import { IServices } from '../../fixtures/services.fixtures'
-import Image from 'next/image'
-import styles from './services.module.scss'
+import { IService } from '../../fixtures/services.fixtures'
+import dynamic from 'next/dynamic'
+import styles from './service.module.scss'
 
-import ImageTry from '../../assets/services-assets/color_x5F_0.svg'
+const Service = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IService) => {
 
-const Services = ({ serviceTitle, serviceSubTitle, itemsDercription }: IServices) => {
+  const SVG = dynamic(() => import('../../assets/services-assets/color_x5F_0.svg'))
+  console.log("render", serviceTitle);
 
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <ImageTry />
+          {SVG && <SVG />}
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
@@ -32,4 +33,4 @@ const Services = ({ serviceTitle, serviceSubTitle, itemsDercription }: IServices
   );
 }
 
-export default Services;
+export default Service;
