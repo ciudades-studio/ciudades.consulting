@@ -2,20 +2,15 @@ import { IServices } from '../../fixtures/services.fixtures'
 import Image from 'next/image'
 import styles from './services.module.scss'
 
-const Services = ({ serviceTitle, serviceSubTitle, itemsDercription, imgServiceUrl }: IServices) => {
+import ImageTry from '../../assets/services-assets/color_x5F_0.svg'
 
-  const myLoader = () => `${imgServiceUrl}`;
+const Services = ({ serviceTitle, serviceSubTitle, itemsDercription }: IServices) => {
 
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <Image 
-            width={"333px"} 
-            height={"239px"}
-            loader={myLoader} 
-            src={imgServiceUrl}
-          />
+          <ImageTry />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
