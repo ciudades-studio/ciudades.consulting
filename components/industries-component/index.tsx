@@ -1,7 +1,6 @@
 import { IIndustries } from '../../fixtures/industries.fixture'
 import Image from 'next/image'
 import styles from './industries.module.scss'
-
 import IndustrieServiceExample from '../../assets/industries-assets/industries01.png'
 
 const Industries = ({ industriesTitle, industriesDescription }: IIndustries) => {
