@@ -22,8 +22,9 @@
 .services-img-container {
   @apply
   hidden
+  max-w-[264.31px]
   lg:block
-  lg:col-start-1
+  lg:col-start-2
   lg:col-end-5
 }
 
