@@ -14,9 +14,13 @@
 
 .title-container {
   @apply
+  bg-bottom
+  bg-no-repeat
+  bg-contain
   bg-text-blackText
   text-text-whiteText;
   height: 341px;
+  background-image: url('../../assets/contact-us-bg-1.png')
 }
 
 .text-title-container {
