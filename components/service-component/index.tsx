@@ -1,7 +1,7 @@
 import { IService } from '../../fixtures/services.fixtures'
 import styles from './service.module.scss'
 import Image from 'next/image'
-import ServicesImageExample from '../../assets/services-assets/color_x5F_1.png'
+import ServicesImage from '../../assets/services-assets/iot-service-image.png'
 
 const Service = ({ serviceTitle, serviceSubTitle, itemsDercription }: IService) => {
   return (
@@ -12,7 +12,7 @@ const Service = ({ serviceTitle, serviceSubTitle, itemsDercription }: IService) 
             width={500} 
             height={500} 
             alt='example image' 
-            src={ServicesImageExample}
+            src={ServicesImage}
           />
         </figure>
         <div className={styles["services-text-container"]}>

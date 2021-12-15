@@ -28,6 +28,12 @@
   lg:col-end-5
 }
 
+.service-image {
+  @apply
+  w-full
+  h-full
+}
+
 .services-text-container {
   @apply
   py-8
