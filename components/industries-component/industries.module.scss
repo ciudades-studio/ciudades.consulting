@@ -23,14 +23,19 @@
   @apply
   hidden
   lg:block
-  lg:col-start-1
+  lg:col-start-3
   lg:col-end-6
+}
+
+.industries-img {
+  @apply
+  object-cover
 }
 
 .industries-text-container {
   @apply
   col-span-full
-  lg:col-start-7
+  lg:col-start-8
   lg:col-end-13
 }
 
