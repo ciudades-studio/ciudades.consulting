@@ -1,5 +1,6 @@
 .hero-container {
-  height: 938px;
+  @apply
+  h-[938px];
   background-size: 1.875rem 1.875rem;
   background-image: radial-gradient( #d8dad5 2px, transparent 2px);
 }
@@ -11,14 +12,15 @@
   grid
   gap-4
   h-full
+  bg-bottom
+  bg-contain
+  bg-no-repeat
   grid-cols-4
   items-center
   md:grid-cols-8
   lg:gap-6
-  lg:grid-cols-12
-  xl:mx-auto;
+  lg:grid-cols-12;
   background-image: url('../../assets/hero-bg-buildings.svg');
-  max-width: 1440px;
 }
 
 .hero-content {
