@@ -9,10 +9,8 @@
 .container {
   @apply
   grid
-  h-full
-  grid-cols-6
-  grid-rows-4
-  justify-items-stretch;
+  h-full;
+  grid-template: repeat(6, 1fr) / repeat(4, 1fr);
 }
 
 .container-item-one,
@@ -29,13 +27,8 @@
 
 .container-item-one {
   @apply
+  col-start-1
   row-start-1
-}
-
-.pui {
-  @apply
-  h-full
-  w-full
 }
 
 .container-item-two {
