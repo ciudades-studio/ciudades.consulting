@@ -16,8 +16,12 @@ const Industrie = ({ industriesTitle, industriesDescription }: IIndustries) => {
         />
       </figure>
       <div className={styles["industries-text-container"]}>
-        <h2 className={styles["industries-text-title"]}>{industriesTitle}</h2>
-        <p className={styles["industries-text-description"]}>{industriesDescription}</p>
+        <h2 className={styles["industries-text-title"]}>
+          {industriesTitle}
+        </h2>
+        <p className={styles["industries-text-description"]}>
+          {industriesDescription}
+        </p>
       </div>
     </div>
   );
