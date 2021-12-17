@@ -17,9 +17,11 @@
 .industries-image-container {
   @apply
   hidden
-  lg:block
-  lg:col-start-3
-  lg:col-end-6
+  w-[450px]
+  lg:flex
+  justify-end
+  lg:col-start-2
+  lg:col-end-4
 }
 
 .industries-img {
@@ -31,19 +33,34 @@
   @apply
   col-span-full
   lg:col-start-8
-  lg:col-end-13
+  lg:col-end-12
 }
 
 .industries-text-title {
   @apply
   mb-8
+  text-center
+  relative
   font-semibold
   md:mb-16
-  md:text-semiBld
+  md:text-semiBld;
+  max-width: 278px;
+}
+
+.industries-text-title::after{
+  left: 1px;
+  bottom: 2px;
+  content: '';
+  width: 278px;
+  height: 15px;
+  max-width: 278px;
+  position: absolute;
+  background-color: #0081E2;
 }
 
 .industries-text-description {
   @apply
+  w-[423px]
   font-medium
   md:text-mdm
 }
