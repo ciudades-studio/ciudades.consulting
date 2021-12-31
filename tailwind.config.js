@@ -1,7 +1,9 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     colors: {
       transparent: 'transparent',
@@ -13,6 +15,7 @@ module.exports = {
       },
       text: {
         whiteText: '#FFFFFF',
+        grayText: '606060',
         blackText: '#262626',
       },
       bgColors: {
@@ -21,6 +24,7 @@ module.exports = {
         white2: '#DEDECB',
         gray1: '#DEDEDE',
         gray2: '#C0C0C0',
+        grayBlue: '#D9EFFF'
       },
       detailColors: {
         green: '#30F58B',
@@ -29,7 +33,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      lora: ['Lora', 'serif'],
+      lora: ['Lato', 'sans-serif'],
     },
     fontSize: {
       bld: '64px',
