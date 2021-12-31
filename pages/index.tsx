@@ -6,16 +6,18 @@ import styles from '../styles/Home.module.scss'
 // Components
 import Header from '../components/header'
 import Hero from '../components/hero/index'
-import Industries from '../components/industries-component'
 import AboutUs from '../components/about-us'
 import ContactUs from '../components/contact-us'
 
+// Component containers 
+import ServicesSection from '../components/services-section'
+import IndustriesSection from '../components/industries-section'
+
 // Content components
 import heroContent from '../fixtures/hero.fixtures'
-import industriesContent from '../fixtures/industries.fixture'
 import aboutUsContent from '../fixtures/about-us-fixture'
-import contactUsContent from '../fixtures/contact-us.fixture' ;
-import ServicesSection from '../components/services-section'
+import contactUsContent from '../fixtures/contact-us.fixture'
+
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +30,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero {...heroContent}/>
       <ServicesSection />
-      {industriesContent.map((servindustrieContentice, index) => <Industries key={index} {...servindustrieContentice} />)}
+      <IndustriesSection />
       <AboutUs {...aboutUsContent} />
       <ContactUs {...contactUsContent} />
     </div>
