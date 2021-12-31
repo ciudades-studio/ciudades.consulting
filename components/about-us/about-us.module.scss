@@ -9,12 +9,59 @@
 .container {
   @apply
   grid
-  h-full
-  grid-cols-6
-  grid-rows-4
-  lg:gap-6
-  xl:mx-auto;
-  max-width: 1440px;
+  h-full;
+  grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+}
+
+.container-item-one,
+.container-item-two,
+.container-item-three,
+.container-item-four,
+.container-item-five,
+.container-item-six,
+.container-item-seven {
+  @apply
+  hidden
+  lg:block
+}
+
+.container-item-one {
+  @apply
+  col-start-1
+  row-start-1
+}
+
+.container-item-two {
+  @apply
+  row-start-2
+}
+
+.container-item-three {
+  @apply
+  row-start-3
+}
+
+.container-item-four {
+  @apply
+  row-start-4
+}
+
+.container-item-five {
+  @apply
+  col-start-5
+  row-start-4
+}
+
+.container-item-six {
+  @apply
+  col-start-6
+  row-start-4
+}
+
+.container-item-seven {
+  @apply
+  col-start-6
+  row-start-3
 }
 
 .aboutus-text-container {
