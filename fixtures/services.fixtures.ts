@@ -1,8 +1,13 @@
+import ServiceImgDigitalProducts from '../assets/services-assets/digital_products_development.svg'
+import ServiceImgIot from '../assets/services-assets/iot_development.svg'
+import ServiceImgCloudInfrestructure from '../assets/services-assets/cloud_Infrastructure.svg'
+
+
 export interface IService {
   serviceTitle: string
   serviceSubTitle: string
   itemsDercription: string[]
-  imgServiceUrl: string
+  ImgServiceSvg: string
 }
 
 const digitalProducts = {
@@ -13,7 +18,7 @@ const digitalProducts = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../../assets/services-assets/color_x5F_0.svg"
+  ImgServiceSvg: ServiceImgDigitalProducts
 }
 
 const iotDevelopment = {
@@ -24,7 +29,7 @@ const iotDevelopment = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../../assets/services-assets/color_x5F_1.svg"
+  ImgServiceSvg: ServiceImgIot
 }
 
 const cloudAndArchitecture = {
@@ -35,7 +40,7 @@ const cloudAndArchitecture = {
     "Become publicly available on the Internet, reaching and engaging with your clients.",
     "Be found at Google."
   ],
-  imgServiceUrl: "/../../assets/services-assets/color_x5F_2.svg"
+  ImgServiceSvg: ServiceImgCloudInfrestructure
 }
 
 export default [ digitalProducts, iotDevelopment, cloudAndArchitecture ];

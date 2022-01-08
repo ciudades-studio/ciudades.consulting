@@ -1,7 +1,11 @@
+import ImgIndustries01 from '../assets/industries-assets/industries01.jpg'
+import ImgIndustries02 from '../assets/industries-assets/industries02.jpg'
+import ImgIndustries03 from '../assets/industries-assets/industries03.jpg'
+
 export interface IIndustries {
   industriesTitle: string
   industriesDescription: string
-  industrieImgUrl: string
+  IndustrieImg: string
 }
 
 const healthCare = {
@@ -12,7 +16,7 @@ const healthCare = {
   engineering.
   
   We’ve been there.`,
-  industrieImgUrl: "/../assets/industries-assets/industries01.png"
+  IndustrieImg: ImgIndustries01
 }
 
 const contentNmedia = {
@@ -25,7 +29,7 @@ const contentNmedia = {
   Comcast, Audible and Medio Tiempo have 
   been part of our challenges and great 
   experiences.`,
-  industrieImgUrl: "/../assets/industries02.png"
+  IndustrieImg: ImgIndustries02
 }
 
 const retail = {
@@ -41,7 +45,7 @@ const retail = {
   Then we help getting insights for enhancing 
   operations and customer acquisition
   using their data.`,
-  industrieImgUrl: "/../assets/industries03.png"
+  IndustrieImg: ImgIndustries03
 }
 
 export default [ healthCare, contentNmedia, retail ];

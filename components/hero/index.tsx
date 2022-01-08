@@ -2,7 +2,7 @@ import { IHero } from '../../fixtures/hero.fixtures'
 import styles from './hero.module.scss'
 import Link from 'next/link'
  
-export const HetoTextContainer = ({ heroMainText, heroText }: IHero) => {
+export const HeroTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
     <div className={styles["hero-text-container"]}>
       <h1 className={styles["hero-main-text"]}>
@@ -33,7 +33,7 @@ const Hero = ({ heroMainText, heroText }: IHero) => {
     <div className={styles["hero-container"]}>
       <div className={styles.container}>
         <div className={styles["hero-content"]}>
-          <HetoTextContainer 
+          <HeroTextContainer 
             heroText={heroText} 
             heroMainText={heroMainText} 
           />

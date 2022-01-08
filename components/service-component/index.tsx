@@ -1,14 +1,12 @@
 import { IService } from '../../fixtures/services.fixtures'
 import styles from './service.module.scss'
-import Image from 'next/image'
-import ServicesImageExample from '../../assets/services-assets/color_x5F_1.png'
 
-const Service = ({ serviceTitle, serviceSubTitle, itemsDercription }: IService) => {
+const Service = ({ serviceTitle, serviceSubTitle, itemsDercription, ImgServiceSvg }: IService) => {
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
         <figure className={styles["services-img-container"]}>
-          <Image src={ServicesImageExample} width={500} height={500} alt='example image' />
+          <ImgServiceSvg />
         </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"]}>
