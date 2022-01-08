@@ -6,6 +6,8 @@ export interface IIndustries {
   industriesTitle: string
   industriesDescription: string
   IndustrieImg: string
+  imgHeight: number
+  imgWidth: number
 }
 
 const healthCare = {
@@ -16,7 +18,9 @@ const healthCare = {
   engineering.
   
   We’ve been there.`,
-  IndustrieImg: ImgIndustries01
+  IndustrieImg: ImgIndustries01,
+  imgHeight: 500,
+  imgWidth: 332,
 }
 
 const contentNmedia = {
@@ -29,7 +33,9 @@ const contentNmedia = {
   Comcast, Audible and Medio Tiempo have 
   been part of our challenges and great 
   experiences.`,
-  IndustrieImg: ImgIndustries02
+  IndustrieImg: ImgIndustries02,
+  imgHeight: 500,
+  imgWidth: 423,
 }
 
 const retail = {
@@ -45,7 +51,9 @@ const retail = {
   Then we help getting insights for enhancing 
   operations and customer acquisition
   using their data.`,
-  IndustrieImg: ImgIndustries03
+  IndustrieImg: ImgIndustries03,
+  imgHeight: 420,
+  imgWidth: 420,
 }
 
 export default [ healthCare, contentNmedia, retail ];
