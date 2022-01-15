@@ -3,6 +3,7 @@
   background-image: url('../../assets/hero-bg-buildings.svg');
   background-size: cover;
   background-position: bottom center;
+  z-index: -3;
   @apply
   mb-8
 }
@@ -47,7 +48,26 @@
   text-semiBld
   text-center
   lg:text-bld
-  lg:font-bold
+  lg:font-bold;
+  .underline {
+    @apply
+    mx-4
+    py-1;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .underline::before {
+    content: '';
+    background-color: #30F58B;
+    width: 100%;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    bottom: 18px;
+    z-index: -1;
+  }
 }
 
 .hero-text {
