@@ -46,6 +46,10 @@
   font-medium
   md:text-mdm;
   max-width: 689px;
+  p {
+    @apply
+    mb-8;
+  }
 }
 
 @media screen and (min-width: 1024px) {

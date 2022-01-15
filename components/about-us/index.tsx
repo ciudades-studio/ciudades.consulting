@@ -7,7 +7,9 @@ function AboutUs({ aboutUsTitle, aboutUsDescription }: IAboutUs): JSX.Element {
       <div className={styles.container}>
         <div className={styles["aboutus-text-container"]}>
           <h2 className={styles["aboutus-title"]}>{aboutUsTitle}</h2>
-          <p className={styles["aboutus-description"]}>{aboutUsDescription}</p>
+          <div className={styles["aboutus-description"]}>
+            {aboutUsDescription.map(item => <p>{item}</p>)}
+          </div>
         </div>
       </div>
     </div>
