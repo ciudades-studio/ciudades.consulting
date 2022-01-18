@@ -6,11 +6,11 @@ export const HeroTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
     <div className={styles["hero-text-container"]}>
       <h1 className={styles["hero-main-text"]}>
-        {heroMainText.map((item: IHeroTxtItem) => {
+        {heroMainText.map((item: IHeroTxtItem, index: number) => {
           if (item.underline)
-            return <span className={styles.underline}>{item.text}</span>
+            return <span className={styles.underline} key={index}>{item.text}</span>
           else
-            return item.text
+            return <span key={index}>{item.text}</span>
         })}
       </h1>
       <h2 className={styles["hero-text"]}>

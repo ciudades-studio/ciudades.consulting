@@ -13,7 +13,7 @@ function AboutUs({ aboutUsTitle, aboutUsDescription }: IAboutUs): JSX.Element {
         <div className={styles["aboutus-text-container"]}>
           <h2 className={styles["aboutus-title"]}>{aboutUsTitle}</h2>
           <div className={styles["aboutus-description"]}>
-            {aboutUsDescription.map(item => <p>{item}</p>)}
+            {aboutUsDescription.map((item, index) => <p key={index}>{item}</p>)}
           </div>
         </div>
         <div className={styles["aboutus-images-right"]}>
