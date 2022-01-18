@@ -5,7 +5,7 @@ import ImgIndustries03 from '../assets/industries-assets/industries03.jpg'
 export interface IIndustries {
   industriesTitle: string
   industriesDescription: string
-  IndustrieImg: string
+  IndustrieImg: string | StaticImageData
   imgHeight: number
   imgWidth: number
 }

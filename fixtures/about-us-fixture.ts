@@ -1,6 +1,6 @@
 export interface IAboutUs {
   aboutUsTitle: string
-  aboutUsDescription: []
+  aboutUsDescription: string[]
 }
 
 const aboutUs = {

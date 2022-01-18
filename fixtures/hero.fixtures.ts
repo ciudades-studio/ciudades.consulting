@@ -1,5 +1,5 @@
 export interface IHero {
-  heroMainText: []
+  heroMainText: { text: string, underline?: boolean }[]
   heroText: string
 }
 
