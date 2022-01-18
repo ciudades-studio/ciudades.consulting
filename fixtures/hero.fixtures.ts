@@ -1,10 +1,19 @@
 export interface IHero {
-  heroMainText: string
+  heroMainText: []
   heroText: string
 }
 
+export interface IHeroTxtItem {
+  text: string
+  underline?: boolean
+}
+
 const heroContent = {
-  heroMainText: "We offer the best cloud solutions customized to your needs",
+  heroMainText: [
+    { text: "We offer the best" },
+    { underline: true, text: "cloud solutions" }, 
+    { text: "customized to your needs" }
+  ],
   heroText: "Become a leader in Software Development for IT and Cloud Solutions is our vission.",
 }
 

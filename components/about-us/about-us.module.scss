@@ -3,7 +3,7 @@
   p-0
   text-text-whiteText
   bg-primary-blue;
-  height: 1024px;
+  min-height: 1024px;
 }
 
 .container {
@@ -15,18 +15,48 @@
   lg:gap-6
   xl:mx-auto;
   max-width: 1440px;
+  background-image: url('../../assets/about-us-assets/vertical-bg.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 265px;
+  position: relative;
+}
+
+.aboutus-images-right {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 265px 265px;
+  grid-template-rows: 206px 265px 265px;
+  right: 0;
+  bottom: 0;
+
+  .points {
+    grid-column: 2;
+    text-align: right;
+  }
+  .img-right1 {
+    grid-column: 2;
+  }
+  .img-right2 {
+    grid-column: 2;
+  }
+  .img-right3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 .aboutus-text-container {
   @apply
   w-full
-  py-36
   items-center
   justify-center
   col-start-2
   col-end-6
   row-start-1
   row-end-5;
+  padding-top: 140px;
+  padding-bottom: 256px;
 }
 
 .aboutus-title {
@@ -46,6 +76,10 @@
   font-medium
   md:text-mdm;
   max-width: 689px;
+  p {
+    @apply
+    mb-8;
+  }
 }
 
 @media screen and (min-width: 1024px) {

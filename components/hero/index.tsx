@@ -1,12 +1,17 @@
-import { IHero } from '../../fixtures/hero.fixtures'
+import { IHero, IHeroTxtItem } from '../../fixtures/hero.fixtures'
 import styles from './hero.module.scss'
 import Link from 'next/link'
  
-export const HetoTextContainer = ({ heroMainText, heroText }: IHero) => {
+export const HeroTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
     <div className={styles["hero-text-container"]}>
       <h1 className={styles["hero-main-text"]}>
-        {heroMainText}
+        {heroMainText.map((item: IHeroTxtItem, index: number) => {
+          if (item.underline)
+            return <span className={styles.underline} key={index}>{item.text}</span>
+          else
+            return <span key={index}>{item.text}</span>
+        })}
       </h1>
       <h2 className={styles["hero-text"]}>
         {heroText}
@@ -33,7 +38,7 @@ const Hero = ({ heroMainText, heroText }: IHero) => {
     <div className={styles["hero-container"]}>
       <div className={styles.container}>
         <div className={styles["hero-content"]}>
-          <HetoTextContainer 
+          <HeroTextContainer 
             heroText={heroText} 
             heroMainText={heroMainText} 
           />
