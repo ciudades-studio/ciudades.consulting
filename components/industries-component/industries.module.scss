@@ -4,6 +4,11 @@
   line-height: 55px;
   margin-top: 150px;
   margin-bottom: 150px;
+  @media (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .industries-container {
@@ -74,6 +79,10 @@
   position: relative;
   bottom: -55px;
   z-index: -1;
+  @media (max-width: 767px) {
+    bottom: -27px;
+    height: 6px;
+  }
 }
 
 .industries-text-description {
