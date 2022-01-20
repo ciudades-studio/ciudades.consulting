@@ -56,4 +56,6 @@ const retail = {
   imgWidth: 420,
 }
 
+export const industriesTitle = 'Industries'
+
 export default [ healthCare, contentNmedia, retail ];
