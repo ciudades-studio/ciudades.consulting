@@ -2,6 +2,14 @@ import { IIndustries } from '../../fixtures/industries.fixture'
 import Image from 'next/image'
 import styles from './industries.module.scss'
 
+export const IndustriesTitle = ({ title = '' }) => {
+  return (
+    <div className={styles['industries-title']}>
+      <h2>{title}</h2>
+    </div>
+  )
+}
+
 const Industries = ({ industriesTitle, industriesDescription, IndustrieImg, imgHeight, imgWidth }: IIndustries) => {
   return (
     <div className={styles["industries-container"]}>

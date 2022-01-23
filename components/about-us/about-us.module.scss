@@ -3,7 +3,7 @@
   p-0
   text-text-whiteText
   bg-primary-blue;
-  min-height: 1024px;
+  // min-height: 1024px;
 }
 
 .container {
@@ -20,6 +20,10 @@
   background-position: left top;
   background-size: 265px;
   position: relative;
+  min-height: 1045px;
+  @media (max-width: 767px) {
+    background-image: none;
+  }
 }
 
 .aboutus-images-right {
@@ -29,6 +33,9 @@
   grid-template-rows: 206px 265px 265px;
   right: 0;
   bottom: 0;
+  @media (max-width: 767px) {
+    display: none;
+  }
 
   .points {
     grid-column: 2;
