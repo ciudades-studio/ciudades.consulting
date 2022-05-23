@@ -13,14 +13,18 @@
 
 .industries-container {
   @apply
-  p-0;
+  pl-12;
   &:nth-child(even) {
     .industries-image-container {
       order: 2;
     }
     .industries-text-container {
       order: 1;
+
     }
+  }
+  &:nth-child(odd) {
+    @apply pr-14;
   }
 }
 
@@ -63,9 +67,10 @@
 
 .industries-text-title {
   display: inline-block;
+  font-style: italic;
   @apply
   mb-8
-  font-semibold
+  font-light
   md:mb-16
   md:text-semiBld
 }

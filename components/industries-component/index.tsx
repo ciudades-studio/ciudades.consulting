@@ -18,7 +18,7 @@ const Industries = ({ industriesTitle, industriesDescription, IndustrieImg, imgH
           <Image src={IndustrieImg} width={imgWidth} height={imgHeight} alt='example image' />
         </figure>
         <div className={styles["industries-text-container"]}>
-          <h1 className={styles["industries-text-title"]}>{industriesTitle}</h1>
+          <h1 className={styles["industries-text-title"] + " font-serif"}>{industriesTitle}</h1>
           <p className={styles["industries-text-description"]}>{industriesDescription}</p>
         </div>
       </div>

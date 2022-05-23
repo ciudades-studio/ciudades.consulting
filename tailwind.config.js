@@ -33,7 +33,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      lora: ['Lato', 'sans-serif'],
+      sans: ['IBM Plex Sans', 'sans-serif'],
+      serif: ['IBM Plex Serif', 'serif'],
     },
     fontSize: {
       bld: '64px',

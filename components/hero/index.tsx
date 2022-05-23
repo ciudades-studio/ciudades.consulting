@@ -4,18 +4,17 @@ import Link from 'next/link'
  
 export const HeroTextContainer = ({ heroMainText, heroText }: IHero) => {
   return (
-    <div className={styles["hero-text-container"]}>
+    <div className={styles["hero-section-container"]}>
       <h1 className={styles["hero-main-text"]}>
         {heroMainText.map((item: IHeroTxtItem, index: number) => {
           if (item.underline)
             return <span className={styles.underline} key={index}>{item.text}</span>
+          if (item.serif)
+          return <span className={styles["serif-emphasis"] + " " + "font-serif" } key={index}>{item.text}</span>
           else
             return <span key={index}>{item.text}</span>
         })}
       </h1>
-      <h2 className={styles["hero-text"]}>
-        {heroText}
-      </h2>
     </div>
   );
 }
@@ -42,7 +41,6 @@ const Hero = ({ heroMainText, heroText }: IHero) => {
             heroText={heroText} 
             heroMainText={heroMainText} 
           />
-          <HeroButtons />
         </div>
       </div>
     </div>

@@ -63,17 +63,16 @@
 }
 
 .services-subtitle {
+  font-weight: 200;
+  font-style: italic;
   @apply
-  font-semibold
   text-text-blackText
   md:text-mdm
-  lg:text-semiBld
 }
 
 .services-items {
   @apply
   pl-7
-  lg:font-medium
   lg:text-semiMdm;
   max-width: 600px;
 }

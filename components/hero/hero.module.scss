@@ -1,11 +1,6 @@
 .hero-container {
-  height: 938px;
-  background-image: url('../../assets/hero-bg-buildings.svg');
-  background-size: cover;
-  background-position: bottom center;
-  z-index: -3;
-  @apply
-  mb-8
+  margin-top: 15vh;
+  margin-bottom: 25vh;
 }
 
 .container {
@@ -34,7 +29,7 @@
   lg:col-end-12
 }
 
-.hero-text-container {
+.hero-section-container {
   @apply
   px-1
   w-full
@@ -44,11 +39,9 @@
 .hero-main-text {
   @apply
   mb-6
-  font-bold
   text-semiBld
   text-center
-  lg:text-bld
-  lg:font-bold;
+  lg:text-bld;
   .underline {
     @apply
     mx-4
@@ -71,6 +64,10 @@
       bottom: 12px;
       height: 8px;
     }
+  }
+  .serif-emphasis {
+    font-style: italic;
+    font-weight: 500;
   }
 }
 
