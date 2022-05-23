@@ -1,6 +1,14 @@
 import { IService } from '../../fixtures/services.fixtures'
 import styles from './service.module.scss'
 
+export const ServicesTitle = ({ title = "Services" }: { title?: string }) => {
+  return (
+    <div className={styles['services-section-title']}>
+      <h2>{title}</h2>
+    </div>
+  )
+}
+
 const Service = ({ serviceTitle, serviceSubTitle, itemsDescription, ImgServiceSvg }: IService) => {
   return (
     <div className={styles["services-container"]}>

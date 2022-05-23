@@ -11,36 +11,26 @@ export interface IService {
 }
 
 const digitalProducts = {
-  serviceTitle: "Digital Products",
-  serviceSubTitle: "From strategies to implementation",
+  serviceTitle: "Digital Products Development",
+  serviceSubTitle: "From strategy to implementation",
   itemsDescription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
+    "Research & technical scoping",
+    "Assistance on building faster with low-code and no-code solutions",
+    "API's integrations and web development",
+    "Headless oriented development"
   ],
   ImgServiceSvg: ServiceImgDigitalProducts
 }
 
-const iotDevelopment = {
-  serviceTitle: "IoT Development",
-  serviceSubTitle: "We approach your project from strategies to implementation.",
-  itemsDescription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
-  ],
-  ImgServiceSvg: ServiceImgIot
-}
-
 const cloudAndArchitecture = {
   serviceTitle: "Cloud Infrastructure & Software Architecture",
-  serviceSubTitle: "We approach your project from strategies to implementation.",
+  serviceSubTitle: "Robust and reliable solutions for your services",
   itemsDescription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
+    "We help deploying and developing on AWS and Azure",
+    "Backend development",
+    "Data migrations & pipelines"
   ],
   ImgServiceSvg: ServiceImgCloudInfrestructure
 }
 
-export default [ digitalProducts, iotDevelopment, cloudAndArchitecture ];
+export default [ digitalProducts, cloudAndArchitecture ];

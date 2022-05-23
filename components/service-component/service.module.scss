@@ -1,3 +1,14 @@
+.services-section-title {
+  text-align: center;
+  font-size: 46px;
+  line-height: 55px;
+  margin-top: 4.5rem;
+  @media (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+}
+
 .services-container {
   @apply
   px-0
@@ -53,28 +64,27 @@
 }
 
 .services-title {
-  @apply
-  text-mdm
-  font-bold
-  text-primary-blue
-  md:text-semiBld
-  lg:text-bld
-  lg:font-bold
+  font-weight: 500;
+  font-size: 2.5rem;
+  @apply text-primary-blue;
 }
 
 .services-subtitle {
-  font-weight: 200;
+  font-weight: 100;
   font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 15px;
   @apply
   text-text-blackText
   md:text-mdm
 }
 
 .services-items {
+  line-height: 2rem;
+  max-width: 600px;
+  font-size: 24px;
   @apply
   pl-7
-  lg:text-semiMdm;
-  max-width: 600px;
 }
 
 .service-item {

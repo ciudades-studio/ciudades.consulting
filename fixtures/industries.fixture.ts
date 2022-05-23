@@ -13,8 +13,8 @@ export interface IIndustries {
 
 const healthCare = {
   industriesTitle: "Health Care",
-  industriesDescription: `Privacy and data protection standards,
-  data workflows and engineering needs for IoT.
+  industriesDescription: `Data security & privacy standards,
+  data workflows and cloud ifrastructure for IoT.
   
   We’ve been there.`,
   IndustrieImg: ImgIndustries01,
@@ -38,7 +38,7 @@ const contentNmedia = {
 
 const retail = {
   industriesTitle: "Retail",
-  industriesDescription: `From idea & budget to converting sales.
+  industriesDescription: `From budget to converting sales.
   Headless e-commerce solutions and inventory management for digital and brick
   and mortar stores.
   We've help getting insights for enhancing operations and customer acquisition using data commerce.`,
