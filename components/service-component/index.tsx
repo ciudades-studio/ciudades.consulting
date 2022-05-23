@@ -1,7 +1,15 @@
 import { IService } from '../../fixtures/services.fixtures'
 import styles from './service.module.scss'
 
-const Service = ({ serviceTitle, serviceSubTitle, itemsDercription, ImgServiceSvg }: IService) => {
+export const ServicesTitle = ({ title = "Services" }: { title?: string }) => {
+  return (
+    <div className={styles['services-section-title']}>
+      <h2>{title}</h2>
+    </div>
+  )
+}
+
+const Service = ({ serviceTitle, serviceSubTitle, itemsDescription, ImgServiceSvg }: IService) => {
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
@@ -9,14 +17,14 @@ const Service = ({ serviceTitle, serviceSubTitle, itemsDercription, ImgServiceSv
           <ImgServiceSvg />
         </figure>
         <div className={styles["services-text-container"]}>
-          <h1 className={styles["services-title"]}>
+          <h1 className={styles["services-title"] }>
             {serviceTitle}
           </h1>
-          <h3 className={styles["services-subtitle"]}>
+          <h3 className={styles["services-subtitle"] + " font-serif"}>
             {serviceSubTitle}
           </h3>
           <ul className={styles["services-items"]}>
-            {itemsDercription.map((item, index) => (
+            {itemsDescription.map((item, index) => (
               <li className={styles["service-item"]} key={index}>
                 {item}
               </li>))

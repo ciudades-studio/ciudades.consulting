@@ -6,41 +6,31 @@ import ServiceImgCloudInfrestructure from '../assets/services-assets/cloud_Infra
 export interface IService {
   serviceTitle: string
   serviceSubTitle: string
-  itemsDercription: string[]
+  itemsDescription: string[]
   ImgServiceSvg: string
 }
 
 const digitalProducts = {
   serviceTitle: "Digital Products Development",
-  serviceSubTitle: "We approach your project from strategies to implementation.",
-  itemsDercription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
+  serviceSubTitle: "From strategy to implementation",
+  itemsDescription: [
+    "Research & technical scoping",
+    "Assistance on building faster with low-code and no-code solutions",
+    "API's integrations and web development",
+    "Headless oriented development"
   ],
   ImgServiceSvg: ServiceImgDigitalProducts
 }
 
-const iotDevelopment = {
-  serviceTitle: "IoT Development",
-  serviceSubTitle: "We approach your project from strategies to implementation.",
-  itemsDercription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
-  ],
-  ImgServiceSvg: ServiceImgIot
-}
-
 const cloudAndArchitecture = {
   serviceTitle: "Cloud Infrastructure & Software Architecture",
-  serviceSubTitle: "We approach your project from strategies to implementation.",
-  itemsDercription: [
-    "Generate and publish attractive content to your market audiences.",
-    "Become publicly available on the Internet, reaching and engaging with your clients.",
-    "Be found at Google."
+  serviceSubTitle: "Robust and reliable solutions for your services",
+  itemsDescription: [
+    "We help deploying and developing on AWS and Azure",
+    "Backend development",
+    "Data migrations & pipelines"
   ],
   ImgServiceSvg: ServiceImgCloudInfrestructure
 }
 
-export default [ digitalProducts, iotDevelopment, cloudAndArchitecture ];
+export default [ digitalProducts, cloudAndArchitecture ];

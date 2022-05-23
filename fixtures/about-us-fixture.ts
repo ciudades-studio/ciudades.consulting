@@ -5,7 +5,9 @@ export interface IAboutUs {
 
 const aboutUs = {
   aboutUsTitle: "About Us",
-  aboutUsDescription: [],
+  aboutUsDescription: [
+    "We're a digital products development & consulting company "
+  ],
 }
 
 export default aboutUs

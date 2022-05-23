@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import ImgIndustries01 from '../assets/industries-assets/industries01.jpg'
 import ImgIndustries02 from '../assets/industries-assets/industries02.jpg'
 import ImgIndustries03 from '../assets/industries-assets/industries03.jpg'
@@ -12,10 +13,8 @@ export interface IIndustries {
 
 const healthCare = {
   industriesTitle: "Health Care",
-  industriesDescription: `Privacy and data protection standards, 
-  user authentication and authorization, 
-  mass notifications and IoT data 
-  engineering.
+  industriesDescription: `Data security & privacy standards,
+  data workflows and cloud ifrastructure for IoT.
   
   We’ve been there.`,
   IndustrieImg: ImgIndustries01,
@@ -25,8 +24,7 @@ const healthCare = {
 
 const contentNmedia = {
   industriesTitle: "Content and Media",
-  industriesDescription: `Our expertise on AWS and a realm of web 
-  development knowledge have been 
+  industriesDescription: `Our expertise on AWS has been 
   getting applications up and running for 
   hundreds of thousands of users.
   
@@ -40,17 +38,10 @@ const contentNmedia = {
 
 const retail = {
   industriesTitle: "Retail",
-  industriesDescription: `From idea & budget to converting sales.
-
-  Using the best services and technologies, 
-  our clients have got solutions that scale 
-  the promotion of goods and services and 
-  inventory management for digital and brick 
+  industriesDescription: `From budget to converting sales.
+  Headless e-commerce solutions and inventory management for digital and brick
   and mortar stores.
-  
-  Then we help getting insights for enhancing 
-  operations and customer acquisition
-  using their data.`,
+  We've help getting insights for enhancing operations and customer acquisition using data commerce.`,
   IndustrieImg: ImgIndustries03,
   imgHeight: 420,
   imgWidth: 420,
