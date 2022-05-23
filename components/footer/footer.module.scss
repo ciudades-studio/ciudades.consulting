@@ -1,0 +1,15 @@
+.footer-container {
+  height: 115px;
+}
+
+
+.footer {
+  @apply
+  p-3
+  flex
+  flex-col
+  items-center
+  justify-center
+  bg-text-blackText
+  text-text-whiteText;
+}
