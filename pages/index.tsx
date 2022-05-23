@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/header'
 import Hero from '../components/hero/index'
 import AboutUs from '../components/about-us'
-import ContactUs from '../components/contact-us'
+import Footer from '../components/footer'
 
 // Content components
 import heroContent from '../fixtures/hero.fixtures'
@@ -28,6 +28,7 @@ const Home: NextPage = () => {
       <IndustriesSection />
       <ServicesSection />
       <AboutUs {...aboutUsContent} />
+      <Footer />
     </div>
   )
 }
