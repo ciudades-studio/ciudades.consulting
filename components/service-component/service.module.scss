@@ -13,14 +13,6 @@
   @apply
   px-0
   py-8;
-  &:nth-child(even) {
-    .services-img-container {
-      order: 2;
-    }
-    .services-text-container {
-      order: 1;
-    }
-  }
 }
 
 .container {
@@ -32,6 +24,7 @@
   h-full
   grid-cols-4
   items-center
+  justify-center
   md:grid-cols-8
   lg:gap-6
   lg:grid-cols-12

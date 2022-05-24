@@ -13,9 +13,6 @@ const Service = ({ serviceTitle, serviceSubTitle, itemsDescription, ImgServiceSv
   return (
     <div className={styles["services-container"]}>
       <div className={styles.container}>
-        <figure className={styles["services-img-container"]}>
-          <ImgServiceSvg />
-        </figure>
         <div className={styles["services-text-container"]}>
           <h1 className={styles["services-title"] }>
             {serviceTitle}
